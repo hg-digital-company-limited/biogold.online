@@ -10,6 +10,10 @@
     <meta name="googlebot" content="index, follow">
     <meta name="google-site-verification" content="34jAURi3G-Cy3eMcW_9Y2WC_gCePy0CjJESnJhKuQ9g" />
     <link rel="icon" href="{{ url('/assets/logo123123-removebg-preview-removebg-preview.png') }}" type="image/x-icon">
+    <meta property="og:image" content="{{ url('/assets/z6392182784286_d34206c2d3a0d56b396160be9ea0b279.jpg') }}">
+    @if (request()->is('/'))
+        <title>Phân Bón Hữu Cơ Cao Cấp - Công Ty TNHH Phân Bón Quốc Tế Rồng Xanh</title>
+    @endif
     <style>
         @font-face {
             font-family: 'FLIcons';
