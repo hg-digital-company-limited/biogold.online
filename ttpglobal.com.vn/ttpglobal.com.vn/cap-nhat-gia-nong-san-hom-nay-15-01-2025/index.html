@@ -1,0 +1,2536 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]> <html lang="vi" prefix="og: https://ogp.me/ns#" class="ie9 loading-site no-js"> <![endif]-->
+<!--[if IE 8 ]> <html lang="vi" prefix="og: https://ogp.me/ns#" class="ie8 loading-site no-js"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="vi" prefix="og: https://ogp.me/ns#" class="loading-site no-js"> <!--<![endif]-->
+<head><meta charset="UTF-8" /><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",(e=>{this.persisted=e.persisted})),window.addEventListener("DOMContentLoaded",(()=>{this._preconnect3rdParties()})),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){document.hidden?e._triggerListener():(this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",e.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",e.touchStartHandler),document.addEventListener("visibilitychange",e.userEventHandler))}_removeUserInteractionListener(){this.triggerEvents.forEach((e=>window.removeEventListener(e,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(e){"HTML"!==e.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),e.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"onclick","rocket-onclick"))}_onTouchMove(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick")}_onTouchEnd(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(e){e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this.interceptedClicks.push(e),e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((e=>{e.target.dispatchEvent(new MouseEvent("click",{view:e.view,bubbles:!0,cancelable:!0}))}))}_renameDOMAttribute(e,t,n){e.hasAttribute&&e.hasAttribute(t)&&(event.target.setAttribute(n,event.target.getAttribute(t)),event.target.removeAttribute(t))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let e=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{if(t.hasAttribute("src")){const n=new URL(t.src).origin;n!==location.origin&&e.push({src:n,crossOrigin:t.crossOrigin||"module"===t.getAttribute("data-rocket-type")})}})),e=[...new Map(e.map((e=>[JSON.stringify(e),e]))).values()],this._batchInjectResourceHints(e,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(e){}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._replayClicks()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._littleBreath(),new Promise((t=>{const n=document.createElement("script");[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type"),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t());try{e.parentNode.replaceChild(n,e)}catch(e){t()}}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(e,t){var n=document.createDocumentFragment();e.forEach((e=>{if(e.src){const i=document.createElement("link");i.href=e.src,i.rel=t,"preconnect"!==t&&(i.as="script"),e.getAttribute&&"module"===e.getAttribute("data-rocket-type")&&(i.crossOrigin=!0),e.crossOrigin&&(i.crossOrigin=e.crossOrigin),n.appendChild(i)}})),document.head.appendChild(n)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(i){e["rocket"+t]=n=i}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),await this._littleBreath();const e=new Event("rocket-pageshow");e.persisted=this.persisted,window.dispatchEvent(e),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,i=document.createRange(),r=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const s=document.createDocumentFragment();i.setStart(s,0),s.appendChild(i.createContextualFragment(t)),r.insertBefore(s,o)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise((e=>setTimeout(e))):new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts;e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+
+ 
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="https://ttpglobal.com.vn/xmlrpc.php" />
+
+	<script type="rocketlazyloadscript">(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<!-- Search Engine Optimization by Rank Math PRO - https://s.rankmath.com/home -->
+<title>Cập nhật giá nông sản hôm nay 15/01/2025</title><link rel="stylesheet" href="https://ttpglobal.com.vn/wp-content/cache/min/1/52de3a3075a28da1f01628707df0896b.css" media="all" data-minify="1" />
+<meta name="description" content="--&gt; Cập nhật giá nông sản hôm nay 16/01/2025"/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://ttpglobal.com.vn/cap-nhat-gia-nong-san-hom-nay-15-01-2025/" />
+<meta property="og:locale" content="vi_VN" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Cập nhật giá nông sản hôm nay 15/01/2025" />
+<meta property="og:description" content="--&gt; Cập nhật giá nông sản hôm nay 16/01/2025" />
+<meta property="og:url" content="https://ttpglobal.com.vn/cap-nhat-gia-nong-san-hom-nay-15-01-2025/" />
+<meta property="og:site_name" content="TTPGLOBAL " />
+<meta property="article:section" content="Giá cả thị trường" />
+<meta property="og:updated_time" content="2025-02-07T10:27:17+07:00" />
+<meta property="og:image" content="https://ttpglobal.com.vn/wp-content/uploads/2025/01/NGAY-16122024-25.jpg" />
+<meta property="og:image:secure_url" content="https://ttpglobal.com.vn/wp-content/uploads/2025/01/NGAY-16122024-25.jpg" />
+<meta property="og:image:width" content="900" />
+<meta property="og:image:height" content="504" />
+<meta property="og:image:alt" content="Cập nhật giá nông sản hôm nay" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Cập nhật giá nông sản hôm nay 15/01/2025" />
+<meta name="twitter:description" content="--&gt; Cập nhật giá nông sản hôm nay 16/01/2025" />
+<meta name="twitter:image" content="https://ttpglobal.com.vn/wp-content/uploads/2025/01/NGAY-16122024-25.jpg" />
+<script type="application/ld+json" class="rank-math-schema-pro">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://ttpglobal.com.vn/#organization","name":"C\u00f4ng ty c\u1ed5 ph\u1ea7n \u0111\u00e2u t\u01b0 TTP GLOBAL","url":"https://ttpglobal.com.vn","logo":{"@type":"ImageObject","@id":"https://ttpglobal.com.vn/#logo","url":"https://ttpglobal.com.vn/wp-content/uploads/2023/05/Du-an-moi-1.png","caption":"C\u00f4ng ty c\u1ed5 ph\u1ea7n \u0111\u00e2u t\u01b0 TTP GLOBAL","inLanguage":"vi","width":"1080","height":"1080"}},{"@type":"WebSite","@id":"https://ttpglobal.com.vn/#website","url":"https://ttpglobal.com.vn","name":"C\u00f4ng ty c\u1ed5 ph\u1ea7n \u0111\u00e2u t\u01b0 TTP GLOBAL","publisher":{"@id":"https://ttpglobal.com.vn/#organization"},"inLanguage":"vi"},{"@type":"ImageObject","@id":"https://ttpglobal.com.vn/wp-content/uploads/2025/01/NGAY-16122024-25.jpg","url":"https://ttpglobal.com.vn/wp-content/uploads/2025/01/NGAY-16122024-25.jpg","width":"900","height":"504","caption":"C\u1eadp nh\u1eadt gi\u00e1 n\u00f4ng s\u1ea3n h\u00f4m nay","inLanguage":"vi"},{"@type":"Person","@id":"https://ttpglobal.com.vn/author/diem-trinhnhigia-vn/","name":"diem.trinh@nhigia.vn","url":"https://ttpglobal.com.vn/author/diem-trinhnhigia-vn/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/655b6370ba1946b1feea4e8a0a3bb66b?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/655b6370ba1946b1feea4e8a0a3bb66b?s=96&amp;d=mm&amp;r=g","caption":"diem.trinh@nhigia.vn","inLanguage":"vi"},"worksFor":{"@id":"https://ttpglobal.com.vn/#organization"}},{"@type":"WebPage","@id":"https://ttpglobal.com.vn/cap-nhat-gia-nong-san-hom-nay-15-01-2025/#webpage","url":"https://ttpglobal.com.vn/cap-nhat-gia-nong-san-hom-nay-15-01-2025/","name":"C\u1eadp nh\u1eadt gi\u00e1 n\u00f4ng s\u1ea3n h\u00f4m nay 15/01/2025","datePublished":"2025-01-15T08:00:00+07:00","dateModified":"2025-02-07T10:27:17+07:00","author":{"@id":"https://ttpglobal.com.vn/author/diem-trinhnhigia-vn/"},"isPartOf":{"@id":"https://ttpglobal.com.vn/#website"},"primaryImageOfPage":{"@id":"https://ttpglobal.com.vn/wp-content/uploads/2025/01/NGAY-16122024-25.jpg"},"inLanguage":"vi"},{"@type":"NewsArticle","headline":"C\u1eadp nh\u1eadt gi\u00e1 n\u00f4ng s\u1ea3n h\u00f4m nay 15/01/2025","keywords":"gi\u00e1 n\u00f4ng s\u1ea3n","datePublished":"2025-01-15T08:00:00+07:00","dateModified":"2025-02-07T10:27:17+07:00","author":{"@id":"https://ttpglobal.com.vn/author/diem-trinhnhigia-vn/"},"publisher":{"@id":"https://ttpglobal.com.vn/#organization"},"description":"--&gt; C\u1eadp nh\u1eadt gi\u00e1 n\u00f4ng s\u1ea3n h\u00f4m nay 16/01/2025","name":"C\u1eadp nh\u1eadt gi\u00e1 n\u00f4ng s\u1ea3n h\u00f4m nay 15/01/2025","@id":"https://ttpglobal.com.vn/cap-nhat-gia-nong-san-hom-nay-15-01-2025/#richSnippet","isPartOf":{"@id":"https://ttpglobal.com.vn/cap-nhat-gia-nong-san-hom-nay-15-01-2025/#webpage"},"image":{"@id":"https://ttpglobal.com.vn/wp-content/uploads/2025/01/NGAY-16122024-25.jpg"},"inLanguage":"vi","mainEntityOfPage":{"@id":"https://ttpglobal.com.vn/cap-nhat-gia-nong-san-hom-nay-15-01-2025/#webpage"}}]}</script>
+<!-- /Rank Math WordPress SEO plugin -->
+
+<link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Dòng thông tin TTPGLOBAL  &raquo;" href="https://ttpglobal.com.vn/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Dòng phản hồi TTPGLOBAL  &raquo;" href="https://ttpglobal.com.vn/comments/feed/" />
+<link rel="prefetch" href="https://ttpglobal.com.vn/wp-content/themes/flatsome/assets/js/chunk.countup.fe2c1016.js" />
+<link rel="prefetch" href="https://ttpglobal.com.vn/wp-content/themes/flatsome/assets/js/chunk.sticky-sidebar.a58a6557.js" />
+<link rel="prefetch" href="https://ttpglobal.com.vn/wp-content/themes/flatsome/assets/js/chunk.tooltips.29144c1c.js" />
+<link rel="prefetch" href="https://ttpglobal.com.vn/wp-content/themes/flatsome/assets/js/chunk.vendors-popups.947eca5c.js" />
+<link rel="prefetch" href="https://ttpglobal.com.vn/wp-content/themes/flatsome/assets/js/chunk.vendors-slider.f0d2cbc9.js" />
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<style id='wp-block-library-inline-css' type='text/css'>
+:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{clip:rect(1px,1px,1px,1px);word-wrap:normal!important;border:0;-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{clip:auto!important;background-color:#ddd;-webkit-clip-path:none;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+</style>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+
+
+
+
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+
+<style id='woo-variation-swatches-inline-css' type='text/css'>
+:root {
+--wvs-tick:url("data:image/svg+xml;utf8,%3Csvg filter='drop-shadow(0px 0px 2px rgb(0 0 0 / .8))' xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 30 30'%3E%3Cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='4' d='M4 16L11 23 27 7'/%3E%3C/svg%3E");
+
+--wvs-cross:url("data:image/svg+xml;utf8,%3Csvg filter='drop-shadow(0px 0px 5px rgb(255 255 255 / .6))' xmlns='http://www.w3.org/2000/svg' width='72px' height='72px' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23ff0000' stroke-linecap='round' stroke-width='0.6' d='M5 5L19 19M19 5L5 19'/%3E%3C/svg%3E");
+--wvs-single-product-item-width:30px;
+--wvs-single-product-item-height:30px;
+--wvs-single-product-item-font-size:16px}
+</style>
+
+
+
+<style id='popup-maker-site-inline-css' type='text/css'>
+/* Popup Google Fonts */
+@import url('//fonts.googleapis.com/css?family=Montserrat:100');
+
+/* Popup Theme 5162: ngtangnangsuat */
+.pum-theme-5162, .pum-theme-ngtangnangsuat { background-color: rgba( 255, 255, 255, 0.08 ) } 
+.pum-theme-5162 .pum-container, .pum-theme-ngtangnangsuat .pum-container { padding: 18px; border-radius: 0px; border: 1px none #000000; box-shadow: 1px 1px 3px 0px rgba( 2, 2, 2, 0.18 ); background-color: rgba( 249, 249, 249, 1.00 ) } 
+.pum-theme-5162 .pum-title, .pum-theme-ngtangnangsuat .pum-title { color: #005500; text-align: left; text-shadow: 0px 0px 0px rgba( 0, 85, 0, 0.23 ); font-family: inherit; font-weight: 400; font-size: 32px; line-height: 36px } 
+.pum-theme-5162 .pum-content, .pum-theme-ngtangnangsuat .pum-content { color: #8c8c8c; font-family: inherit; font-weight: 400 } 
+.pum-theme-5162 .pum-content + .pum-close, .pum-theme-ngtangnangsuat .pum-content + .pum-close { position: absolute; height: 44px; width: 44px; left: auto; right: -18px; bottom: auto; top: -18px; padding: 0px; color: #ffffff; font-family: inherit; font-weight: 400; font-size: 12px; line-height: 36px; border: 1px none #ffffff; border-radius: 44px; box-shadow: 1px 1px 3px 0px rgba( 2, 2, 2, 0.23 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 0, 85, 0, 1.00 ) } 
+
+/* Popup Theme 2698: ng */
+.pum-theme-2698, .pum-theme-ng { background-color: rgba( 255, 255, 255, 0.08 ) } 
+.pum-theme-2698 .pum-container, .pum-theme-ng .pum-container { padding: 18px; border-radius: 0px; border: 1px none #000000; box-shadow: 1px 1px 3px 0px rgba( 2, 2, 2, 0.23 ); background-color: rgba( 249, 249, 249, 1.00 ) } 
+.pum-theme-2698 .pum-title, .pum-theme-ng .pum-title { color: #005500; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-weight: 400; font-size: 32px; line-height: 36px } 
+.pum-theme-2698 .pum-content, .pum-theme-ng .pum-content { color: #8c8c8c; font-family: inherit; font-weight: 400 } 
+.pum-theme-2698 .pum-content + .pum-close, .pum-theme-ng .pum-content + .pum-close { position: absolute; height: 44px; width: 44px; left: auto; right: -16px; bottom: auto; top: -16px; padding: 0px; color: #ffffff; font-family: inherit; font-weight: 400; font-size: 12px; line-height: 36px; border: 1px none #ffffff; border-radius: 44px; box-shadow: 1px 1px 3px 0px rgba( 2, 2, 2, 0.23 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 0, 85, 0, 1.00 ) } 
+
+/* Popup Theme 2686: Default Theme */
+.pum-theme-2686, .pum-theme-default-theme { background-color: rgba( 255, 255, 255, 1.00 ) } 
+.pum-theme-2686 .pum-container, .pum-theme-default-theme .pum-container { padding: 18px; border-radius: 0px; border: 1px none #000000; box-shadow: 1px 1px 3px 0px rgba( 2, 2, 2, 0.23 ); background-color: rgba( 249, 249, 249, 1.00 ) } 
+.pum-theme-2686 .pum-title, .pum-theme-default-theme .pum-title { color: #000000; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-weight: 400; font-size: 32px; font-style: normal; line-height: 36px } 
+.pum-theme-2686 .pum-content, .pum-theme-default-theme .pum-content { color: #8c8c8c; font-family: inherit; font-weight: 400; font-style: inherit } 
+.pum-theme-2686 .pum-content + .pum-close, .pum-theme-default-theme .pum-content + .pum-close { position: absolute; height: auto; width: auto; left: auto; right: 0px; bottom: auto; top: 0px; padding: 8px; color: #ffffff; font-family: inherit; font-weight: 400; font-size: 12px; font-style: inherit; line-height: 36px; border: 1px none #ffffff; border-radius: 0px; box-shadow: 1px 1px 3px 0px rgba( 2, 2, 2, 0.23 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 0, 183, 205, 1.00 ) } 
+
+/* Popup Theme 2687: Light Box */
+.pum-theme-2687, .pum-theme-lightbox { background-color: rgba( 0, 0, 0, 0.60 ) } 
+.pum-theme-2687 .pum-container, .pum-theme-lightbox .pum-container { padding: 18px; border-radius: 3px; border: 8px solid #000000; box-shadow: 0px 0px 30px 0px rgba( 2, 2, 2, 1.00 ); background-color: rgba( 255, 255, 255, 1.00 ) } 
+.pum-theme-2687 .pum-title, .pum-theme-lightbox .pum-title { color: #000000; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-weight: 100; font-size: 32px; line-height: 36px } 
+.pum-theme-2687 .pum-content, .pum-theme-lightbox .pum-content { color: #000000; font-family: inherit; font-weight: 100 } 
+.pum-theme-2687 .pum-content + .pum-close, .pum-theme-lightbox .pum-content + .pum-close { position: absolute; height: 26px; width: 26px; left: auto; right: -13px; bottom: auto; top: -13px; padding: 0px; color: #ffffff; font-family: Arial; font-weight: 100; font-size: 24px; line-height: 24px; border: 2px solid #ffffff; border-radius: 26px; box-shadow: 0px 0px 15px 1px rgba( 2, 2, 2, 0.75 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 0, 0, 0, 1.00 ) } 
+
+/* Popup Theme 2688: Enterprise Blue */
+.pum-theme-2688, .pum-theme-enterprise-blue { background-color: rgba( 0, 0, 0, 0.70 ) } 
+.pum-theme-2688 .pum-container, .pum-theme-enterprise-blue .pum-container { padding: 28px; border-radius: 5px; border: 1px none #000000; box-shadow: 0px 10px 25px 4px rgba( 2, 2, 2, 0.50 ); background-color: rgba( 255, 255, 255, 1.00 ) } 
+.pum-theme-2688 .pum-title, .pum-theme-enterprise-blue .pum-title { color: #315b7c; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-weight: 100; font-size: 34px; line-height: 36px } 
+.pum-theme-2688 .pum-content, .pum-theme-enterprise-blue .pum-content { color: #2d2d2d; font-family: inherit; font-weight: 100 } 
+.pum-theme-2688 .pum-content + .pum-close, .pum-theme-enterprise-blue .pum-content + .pum-close { position: absolute; height: 28px; width: 28px; left: auto; right: 8px; bottom: auto; top: 8px; padding: 4px; color: #ffffff; font-family: Times New Roman; font-weight: 100; font-size: 20px; line-height: 20px; border: 1px none #ffffff; border-radius: 42px; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.23 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 49, 91, 124, 1.00 ) } 
+
+/* Popup Theme 2689: Hello Box */
+.pum-theme-2689, .pum-theme-hello-box { background-color: rgba( 0, 0, 0, 0.75 ) } 
+.pum-theme-2689 .pum-container, .pum-theme-hello-box .pum-container { padding: 30px; border-radius: 80px; border: 14px solid #81d742; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.00 ); background-color: rgba( 255, 255, 255, 1.00 ) } 
+.pum-theme-2689 .pum-title, .pum-theme-hello-box .pum-title { color: #2d2d2d; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: Montserrat; font-weight: 100; font-size: 32px; line-height: 36px } 
+.pum-theme-2689 .pum-content, .pum-theme-hello-box .pum-content { color: #2d2d2d; font-family: inherit; font-weight: 100 } 
+.pum-theme-2689 .pum-content + .pum-close, .pum-theme-hello-box .pum-content + .pum-close { position: absolute; height: auto; width: auto; left: auto; right: -30px; bottom: auto; top: -30px; padding: 0px; color: #2d2d2d; font-family: Times New Roman; font-weight: 100; font-size: 32px; line-height: 28px; border: 1px none #ffffff; border-radius: 28px; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.23 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 255, 255, 255, 1.00 ) } 
+
+/* Popup Theme 2690: Cutting Edge */
+.pum-theme-2690, .pum-theme-cutting-edge { background-color: rgba( 0, 0, 0, 0.50 ) } 
+.pum-theme-2690 .pum-container, .pum-theme-cutting-edge .pum-container { padding: 18px; border-radius: 0px; border: 1px none #000000; box-shadow: 0px 10px 25px 0px rgba( 2, 2, 2, 0.50 ); background-color: rgba( 30, 115, 190, 1.00 ) } 
+.pum-theme-2690 .pum-title, .pum-theme-cutting-edge .pum-title { color: #ffffff; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: Sans-Serif; font-weight: 100; font-size: 26px; line-height: 28px } 
+.pum-theme-2690 .pum-content, .pum-theme-cutting-edge .pum-content { color: #ffffff; font-family: inherit; font-weight: 100 } 
+.pum-theme-2690 .pum-content + .pum-close, .pum-theme-cutting-edge .pum-content + .pum-close { position: absolute; height: 24px; width: 24px; left: auto; right: 0px; bottom: auto; top: 0px; padding: 0px; color: #1e73be; font-family: Times New Roman; font-weight: 100; font-size: 32px; line-height: 24px; border: 1px none #ffffff; border-radius: 0px; box-shadow: -1px 1px 1px 0px rgba( 2, 2, 2, 0.10 ); text-shadow: -1px 1px 1px rgba( 0, 0, 0, 0.10 ); background-color: rgba( 238, 238, 34, 1.00 ) } 
+
+/* Popup Theme 2691: Framed Border */
+.pum-theme-2691, .pum-theme-framed-border { background-color: rgba( 255, 255, 255, 0.50 ) } 
+.pum-theme-2691 .pum-container, .pum-theme-framed-border .pum-container { padding: 18px; border-radius: 0px; border: 20px outset #dd3333; box-shadow: 1px 1px 3px 0px rgba( 2, 2, 2, 0.97 ) inset; background-color: rgba( 255, 251, 239, 1.00 ) } 
+.pum-theme-2691 .pum-title, .pum-theme-framed-border .pum-title { color: #000000; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-weight: 100; font-size: 32px; line-height: 36px } 
+.pum-theme-2691 .pum-content, .pum-theme-framed-border .pum-content { color: #2d2d2d; font-family: inherit; font-weight: 100 } 
+.pum-theme-2691 .pum-content + .pum-close, .pum-theme-framed-border .pum-content + .pum-close { position: absolute; height: 20px; width: 20px; left: auto; right: -20px; bottom: auto; top: -20px; padding: 0px; color: #ffffff; font-family: Tahoma; font-weight: 700; font-size: 16px; line-height: 18px; border: 1px none #ffffff; border-radius: 0px; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.23 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 0, 0, 0, 0.55 ) } 
+
+/* Popup Theme 2692: Floating Bar - Soft Blue */
+.pum-theme-2692, .pum-theme-floating-bar { background-color: rgba( 255, 255, 255, 0.00 ) } 
+.pum-theme-2692 .pum-container, .pum-theme-floating-bar .pum-container { padding: 8px; border-radius: 0px; border: 1px none #000000; box-shadow: 1px 1px 3px 0px rgba( 2, 2, 2, 0.23 ); background-color: rgba( 238, 246, 252, 1.00 ) } 
+.pum-theme-2692 .pum-title, .pum-theme-floating-bar .pum-title { color: #505050; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-weight: 400; font-size: 32px; line-height: 36px } 
+.pum-theme-2692 .pum-content, .pum-theme-floating-bar .pum-content { color: #505050; font-family: inherit; font-weight: 400 } 
+.pum-theme-2692 .pum-content + .pum-close, .pum-theme-floating-bar .pum-content + .pum-close { position: absolute; height: 18px; width: 18px; left: auto; right: 5px; bottom: auto; top: 50%; padding: 0px; color: #505050; font-family: Sans-Serif; font-weight: 700; font-size: 15px; line-height: 18px; border: 1px solid #505050; border-radius: 15px; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.00 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.00 ); background-color: rgba( 255, 255, 255, 0.00 ); transform: translate(0, -50%) } 
+
+/* Popup Theme 2693: Content Only - For use with page builders or block editor */
+.pum-theme-2693, .pum-theme-content-only { background-color: rgba( 0, 0, 0, 0.70 ) } 
+.pum-theme-2693 .pum-container, .pum-theme-content-only .pum-container { padding: 0px; border-radius: 0px; border: 1px none #000000; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.00 ) } 
+.pum-theme-2693 .pum-title, .pum-theme-content-only .pum-title { color: #000000; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-weight: 400; font-size: 32px; line-height: 36px } 
+.pum-theme-2693 .pum-content, .pum-theme-content-only .pum-content { color: #8c8c8c; font-family: inherit; font-weight: 400 } 
+.pum-theme-2693 .pum-content + .pum-close, .pum-theme-content-only .pum-content + .pum-close { position: absolute; height: 18px; width: 18px; left: auto; right: 7px; bottom: auto; top: 7px; padding: 0px; color: #000000; font-family: inherit; font-weight: 700; font-size: 20px; line-height: 20px; border: 1px none #ffffff; border-radius: 15px; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.00 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.00 ); background-color: rgba( 255, 255, 255, 0.00 ) } 
+
+#pum-5043 {z-index: 1999999999}
+#pum-5185 {z-index: 1999999999}
+#pum-5067 {z-index: 1999999999}
+#pum-2696 {z-index: 1999999999}
+#pum-2694 {z-index: 1999999999}
+
+</style>
+
+<style id='fixedtoc-style-inline-css' type='text/css'>
+.ftwp-in-post#ftwp-container-outer { height: auto; } #ftwp-container.ftwp-wrap #ftwp-contents { width: 250px; height: 250px; } .ftwp-in-post#ftwp-container-outer #ftwp-contents { height: auto; } .ftwp-in-post#ftwp-container-outer.ftwp-float-none #ftwp-contents { width: 250px; } #ftwp-container.ftwp-wrap #ftwp-trigger { width: 50px; height: 50px; font-size: 30px; } #ftwp-container #ftwp-trigger.ftwp-border-medium { font-size: 29px; } #ftwp-container.ftwp-wrap #ftwp-header { font-size: 16px; font-family: inherit; } #ftwp-container.ftwp-wrap #ftwp-header-title { font-weight: bold; } #ftwp-container.ftwp-wrap #ftwp-list { font-size: 13px; font-family: inherit; } #ftwp-container.ftwp-wrap #ftwp-list .ftwp-anchor::before { font-size: 5.2px; } #ftwp-container #ftwp-list.ftwp-strong-first>.ftwp-item>.ftwp-anchor .ftwp-text { font-size: 14.3px; } #ftwp-container.ftwp-wrap #ftwp-list.ftwp-strong-first>.ftwp-item>.ftwp-anchor::before { font-size: 6.5px; } #ftwp-container.ftwp-wrap #ftwp-trigger { color: #333; background: rgba(243,243,243,0.95); } #ftwp-container.ftwp-wrap #ftwp-trigger { border-color: rgba(51,51,51,0.95); } #ftwp-container.ftwp-wrap #ftwp-contents { border-color: rgba(51,51,51,0.95); } #ftwp-container.ftwp-wrap #ftwp-header { color: #333; background: rgba(243,243,243,0.95); } #ftwp-container.ftwp-wrap #ftwp-contents:hover #ftwp-header { background: #f3f3f3; } #ftwp-container.ftwp-wrap #ftwp-list { color: #333; background: rgba(243,243,243,0.95); } #ftwp-container.ftwp-wrap #ftwp-contents:hover #ftwp-list { background: #f3f3f3; } #ftwp-container.ftwp-wrap #ftwp-list .ftwp-anchor:hover { color: #00A368; } #ftwp-container.ftwp-wrap #ftwp-list .ftwp-anchor:focus, #ftwp-container.ftwp-wrap #ftwp-list .ftwp-active, #ftwp-container.ftwp-wrap #ftwp-list .ftwp-active:hover { color: #fff; } #ftwp-container.ftwp-wrap #ftwp-list .ftwp-text::before { background: rgba(221,51,51,0.95); } .ftwp-heading-target::before { background: rgba(221,51,51,0.95); }
+</style>
+
+<style id='flatsome-main-inline-css' type='text/css'>
+@font-face {
+				font-family: "fl-icons";
+				font-display: block;
+				src: url(https://ttpglobal.com.vn/wp-content/themes/flatsome/assets/css/icons/fl-icons.eot?v=3.15.3);
+				src:
+					url(https://ttpglobal.com.vn/wp-content/themes/flatsome/assets/css/icons/fl-icons.eot#iefix?v=3.15.3) format("embedded-opentype"),
+					url(https://ttpglobal.com.vn/wp-content/themes/flatsome/assets/css/icons/fl-icons.woff2?v=3.15.3) format("woff2"),
+					url(https://ttpglobal.com.vn/wp-content/themes/flatsome/assets/css/icons/fl-icons.ttf?v=3.15.3) format("truetype"),
+					url(https://ttpglobal.com.vn/wp-content/themes/flatsome/assets/css/icons/fl-icons.woff?v=3.15.3) format("woff"),
+					url(https://ttpglobal.com.vn/wp-content/themes/flatsome/assets/css/icons/fl-icons.svg?v=3.15.3#fl-icons) format("svg");
+			}
+</style>
+
+
+<link rel='stylesheet' id='mystickyelements-google-fonts-css' href='https://fonts.googleapis.com/css?family=Poppins%3A400%2C500%2C600%2C700&#038;ver=2.0.7' type='text/css' media='all' />
+
+
+
+<link rel='stylesheet' id='flatsome-googlefonts-css' href='//fonts.googleapis.com/css?family=Roboto%3Aregular%2C700%2Cregular%2C700%7CDancing+Script%3Aregular%2C400&#038;display=swap&#038;ver=3.9' type='text/css' media='all' />
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-includes/js/jquery/jquery.min.js?ver=3.7.0' id='jquery-core-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1' id='jquery-migrate-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.6.4.1' id='jquery-blockui-js' defer></script>
+<script type='text/javascript' id='wc-add-to-cart-js-extra'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"Xem gi\u1ecf h\u00e0ng","cart_url":"https:\/\/ttpglobal.com.vn\/cart-2\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=6.4.1' id='wc-add-to-cart-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-content/cache/min/1/wp-content/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart.js?ver=1739757361' id='vc_woocommerce-add-to-cart-js-js' defer></script>
+<link rel="https://api.w.org/" href="https://ttpglobal.com.vn/wp-json/" /><link rel="alternate" type="application/json" href="https://ttpglobal.com.vn/wp-json/wp/v2/posts/8903" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://ttpglobal.com.vn/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.3" />
+<meta name="generator" content="Everest Forms 3.0.3.1" />
+<link rel='shortlink' href='https://ttpglobal.com.vn/?p=8903' />
+<link rel="alternate" type="application/json+oembed" href="https://ttpglobal.com.vn/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fttpglobal.com.vn%2Fcap-nhat-gia-nong-san-hom-nay-15-01-2025%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://ttpglobal.com.vn/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fttpglobal.com.vn%2Fcap-nhat-gia-nong-san-hom-nay-15-01-2025%2F&#038;format=xml" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org/",
+    "@type": "CreativeWorkSeries",
+    "name": "Cập nhật giá nông sản hôm nay 15/01/2025",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "ratingCount": "10"
+    }
+}</script><style>.bg{opacity: 0; transition: opacity 1s; -webkit-transition: opacity 1s;} .bg-loaded{opacity: 1;}</style><!--[if IE]><link rel="stylesheet" type="text/css" href="https://ttpglobal.com.vn/wp-content/themes/flatsome/assets/css/ie-fallback.css"><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"></script><script>var head = document.getElementsByTagName('head')[0],style = document.createElement('style');style.type = 'text/css';style.styleSheet.cssText = ':before,:after{content:none !important';head.appendChild(style);setTimeout(function(){head.removeChild(style);}, 0);</script><script src="https://ttpglobal.com.vn/wp-content/themes/flatsome/assets/libs/ie-flexibility.js"></script><![endif]--><!-- Google Tag Manager -->
+<script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5LT9KC48');</script>
+<!-- End Google Tag Manager -->
+
+
+<script type="rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {
+ 
+jQuery(function($) {
+   var path = window.location.href;
+ 
+   $('.col-inner a').each(function() {
+      if (this.href === path) {
+         $(this).addClass('tpactive');
+      }
+   });
+});
+ 
+});</script>
+<meta name='dmca-site-verification' content='cVdxdXlzejdna2p4c1J2UUhCMXpRait4YlRYMHNObE42eFZsK0VmVk93ST01' />
+
+
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<link rel="icon" href="https://ttpglobal.com.vn/wp-content/uploads/2022/05/cropped-900-x-900b-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://ttpglobal.com.vn/wp-content/uploads/2022/05/cropped-900-x-900b-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://ttpglobal.com.vn/wp-content/uploads/2022/05/cropped-900-x-900b-180x180.png" />
+<meta name="msapplication-TileImage" content="https://ttpglobal.com.vn/wp-content/uploads/2022/05/cropped-900-x-900b-270x270.png" />
+<style id="custom-css" type="text/css">:root {--primary-color: #1a622b;}.full-width .ubermenu-nav, .container, .row{max-width: 1170px}.row.row-collapse{max-width: 1140px}.row.row-small{max-width: 1162.5px}.row.row-large{max-width: 1200px}.header-main{height: 75px}#logo img{max-height: 75px}#logo{width:125px;}.header-bottom{min-height: 77px}.header-top{min-height: 20px}.transparent .header-main{height: 30px}.transparent #logo img{max-height: 30px}.has-transparent + .page-title:first-of-type,.has-transparent + #main > .page-title,.has-transparent + #main > div > .page-title,.has-transparent + #main .page-header-wrapper:first-of-type .page-title{padding-top: 80px;}.header.show-on-scroll,.stuck .header-main{height:80px!important}.stuck #logo img{max-height: 80px!important}.search-form{ width: 15%;}.header-bg-color {background-color: #ffffff}.header-bottom {background-color: #ffffff}.top-bar-nav > li > a{line-height: 16px }.header-main .nav > li > a{line-height: 16px }.stuck .header-main .nav > li > a{line-height: 36px }.header-bottom-nav > li > a{line-height: 10px }@media (max-width: 549px) {.header-main{height: 75px}#logo img{max-height: 75px}}.nav-dropdown{border-radius:3px}.nav-dropdown{font-size:100%}.header-top{background-color:rgba(94,94,94,0.42)!important;}/* Color */.accordion-title.active, .has-icon-bg .icon .icon-inner,.logo a, .primary.is-underline, .primary.is-link, .badge-outline .badge-inner, .nav-outline > li.active> a,.nav-outline >li.active > a, .cart-icon strong,[data-color='primary'], .is-outline.primary{color: #1a622b;}/* Color !important */[data-text-color="primary"]{color: #1a622b!important;}/* Background Color */[data-text-bg="primary"]{background-color: #1a622b;}/* Background */.scroll-to-bullets a,.featured-title, .label-new.menu-item > a:after, .nav-pagination > li > .current,.nav-pagination > li > span:hover,.nav-pagination > li > a:hover,.has-hover:hover .badge-outline .badge-inner,button[type="submit"], .button.wc-forward:not(.checkout):not(.checkout-button), .button.submit-button, .button.primary:not(.is-outline),.featured-table .title,.is-outline:hover, .has-icon:hover .icon-label,.nav-dropdown-bold .nav-column li > a:hover, .nav-dropdown.nav-dropdown-bold > li > a:hover, .nav-dropdown-bold.dark .nav-column li > a:hover, .nav-dropdown.nav-dropdown-bold.dark > li > a:hover, .header-vertical-menu__opener ,.is-outline:hover, .tagcloud a:hover,.grid-tools a, input[type='submit']:not(.is-form), .box-badge:hover .box-text, input.button.alt,.nav-box > li > a:hover,.nav-box > li.active > a,.nav-pills > li.active > a ,.current-dropdown .cart-icon strong, .cart-icon:hover strong, .nav-line-bottom > li > a:before, .nav-line-grow > li > a:before, .nav-line > li > a:before,.banner, .header-top, .slider-nav-circle .flickity-prev-next-button:hover svg, .slider-nav-circle .flickity-prev-next-button:hover .arrow, .primary.is-outline:hover, .button.primary:not(.is-outline), input[type='submit'].primary, input[type='submit'].primary, input[type='reset'].button, input[type='button'].primary, .badge-inner{background-color: #1a622b;}/* Border */.nav-vertical.nav-tabs > li.active > a,.scroll-to-bullets a.active,.nav-pagination > li > .current,.nav-pagination > li > span:hover,.nav-pagination > li > a:hover,.has-hover:hover .badge-outline .badge-inner,.accordion-title.active,.featured-table,.is-outline:hover, .tagcloud a:hover,blockquote, .has-border, .cart-icon strong:after,.cart-icon strong,.blockUI:before, .processing:before,.loading-spin, .slider-nav-circle .flickity-prev-next-button:hover svg, .slider-nav-circle .flickity-prev-next-button:hover .arrow, .primary.is-outline:hover{border-color: #1a622b}.nav-tabs > li.active > a{border-top-color: #1a622b}.widget_shopping_cart_content .blockUI.blockOverlay:before { border-left-color: #1a622b }.woocommerce-checkout-review-order .blockUI.blockOverlay:before { border-left-color: #1a622b }/* Fill */.slider .flickity-prev-next-button:hover svg,.slider .flickity-prev-next-button:hover .arrow{fill: #1a622b;}body{font-size: 100%;}@media screen and (max-width: 549px){body{font-size: 100%;}}body{font-family:"Roboto", sans-serif}body{font-weight: 0}body{color: #000000}.nav > li > a {font-family:"Roboto", sans-serif;}.mobile-sidebar-levels-2 .nav > li > ul > li > a {font-family:"Roboto", sans-serif;}.nav > li > a {font-weight: 700;}.mobile-sidebar-levels-2 .nav > li > ul > li > a {font-weight: 700;}h1,h2,h3,h4,h5,h6,.heading-font, .off-canvas-center .nav-sidebar.nav-vertical > li > a{font-family: "Roboto", sans-serif;}h1,h2,h3,h4,h5,h6,.heading-font,.banner h1,.banner h2{font-weight: 700;}h1,h2,h3,h4,h5,h6,.heading-font{color: #075f33;}.nav > li > a, .links > li > a{text-transform: none;}.alt-font{font-family: "Dancing Script", sans-serif;}.alt-font{font-weight: 400!important;}.header:not(.transparent) .header-nav-main.nav > li > a {color: #000000;}.header:not(.transparent) .header-nav-main.nav > li > a:hover,.header:not(.transparent) .header-nav-main.nav > li.active > a,.header:not(.transparent) .header-nav-main.nav > li.current > a,.header:not(.transparent) .header-nav-main.nav > li > a.active,.header:not(.transparent) .header-nav-main.nav > li > a.current{color: #075f33;}.header-nav-main.nav-line-bottom > li > a:before,.header-nav-main.nav-line-grow > li > a:before,.header-nav-main.nav-line > li > a:before,.header-nav-main.nav-box > li > a:hover,.header-nav-main.nav-box > li.active > a,.header-nav-main.nav-pills > li > a:hover,.header-nav-main.nav-pills > li.active > a{color:#FFF!important;background-color: #075f33;}.header:not(.transparent) .header-bottom-nav.nav > li > a{color: #000000;}.header:not(.transparent) .header-bottom-nav.nav > li > a:hover,.header:not(.transparent) .header-bottom-nav.nav > li.active > a,.header:not(.transparent) .header-bottom-nav.nav > li.current > a,.header:not(.transparent) .header-bottom-nav.nav > li > a.active,.header:not(.transparent) .header-bottom-nav.nav > li > a.current{color: #075f33;}.header-bottom-nav.nav-line-bottom > li > a:before,.header-bottom-nav.nav-line-grow > li > a:before,.header-bottom-nav.nav-line > li > a:before,.header-bottom-nav.nav-box > li > a:hover,.header-bottom-nav.nav-box > li.active > a,.header-bottom-nav.nav-pills > li > a:hover,.header-bottom-nav.nav-pills > li.active > a{color:#FFF!important;background-color: #075f33;}a{color: #075f33;}a:hover{color: #13990f;}.tagcloud a:hover{border-color: #13990f;background-color: #13990f;}.shop-page-title.featured-title .title-overlay{background-color: #1a622b;}.has-equal-box-heights .box-image {padding-top: 100%;}@media screen and (min-width: 550px){.products .box-vertical .box-image{min-width: 300px!important;width: 300px!important;}}.header-main .social-icons,.header-main .cart-icon strong,.header-main .menu-title,.header-main .header-button > .button.is-outline,.header-main .nav > li > a > i:not(.icon-angle-down){color: #1a622b!important;}.header-main .header-button > .button.is-outline,.header-main .cart-icon strong:after,.header-main .cart-icon strong{border-color: #1a622b!important;}.header-main .header-button > .button:not(.is-outline){background-color: #1a622b!important;}.header-main .current-dropdown .cart-icon strong,.header-main .header-button > .button:hover,.header-main .header-button > .button:hover i,.header-main .header-button > .button:hover span{color:#FFF!important;}.header-main .menu-title:hover,.header-main .social-icons a:hover,.header-main .header-button > .button.is-outline:hover,.header-main .nav > li > a:hover > i:not(.icon-angle-down){color: #075f33!important;}.header-main .current-dropdown .cart-icon strong,.header-main .header-button > .button:hover{background-color: #075f33!important;}.header-main .current-dropdown .cart-icon strong:after,.header-main .current-dropdown .cart-icon strong,.header-main .header-button > .button:hover{border-color: #075f33!important;}.footer-1{background-image: url('https://ttpglobal.com.vn/wp-content/uploads/2022/10/bg-footer-1.jpg');}.footer-1{background-color: rgba(255,255,255,0)}.header-vertical-menu__opener, .header-vertical-menu__fly-out{width: 189px}.header-vertical-menu__fly-out{background-color: #ffffff}/* Custom CSS */.entry-author.author-box {display: none;}.everest-forms-field-limit-text {display: none;}.label-new.menu-item > a:after{content:"New";}.label-hot.menu-item > a:after{content:"Hot";}.label-sale.menu-item > a:after{content:"Sale";}.label-popular.menu-item > a:after{content:"Popular";}</style>		<style type="text/css" id="wp-custom-css">
+			/***** CSS trên Desktop ******/
+
+@media only screen and (min-width: 850px) {
+/*/     CSS LOGO     /*/
+	
+#logo img {
+    max-height: 125px;
+		padding-top:18px;
+}
+	
+
+/*==    DONE CSS LOGO   ==*/
+/*/ LINE HEADER MAIN AND BOTTOM  /*/
+.header-main .inner {
+    width: 85%;
+    height: 1px;
+		margin-left:auto;
+		border-bottom: 1px solid #ddd;
+}
+	
+.header-main{
+		height: 100px !important;
+	}
+
+/*== DONE LINE HEADER MAIN AND BOTTOM ==*/
+/*/   CSS SUB MENU MAIN     /*/
+.header-main .header-inner a{
+	font-size:13px;
+	font-weight:450 !important;
+}
+
+.header-main .gt-current-lang img{
+	margin-right:6px;
+}
+/*== DONE CSS SUB MENU MAIN ==*/
+/*/ CHƯA PHÂN LOẠI /*/
+.header-main .social-icons .is-outline{
+	border-color:#ddd !important;
+	color: black;
+}
+.header-bottom {
+    min-height: 40px;
+}
+.stuck .header-bottom {
+    min-height: 0px !important;
+}
+.stuck #logo img {
+
+    max-height: 105px !important;
+    padding-top: 18px;
+	margin:auto;
+}
+.nav-dropdown {
+		margin-top:5px;
+		background-color:translate;
+	}
+.nav-dropdown li {
+    margin-top: 2px;
+    background-color: #2c7e3c !important;
+		  border-radius: 5px;
+
+}
+	
+.nav-dropdown {
+    color: #fff !important;
+    background-color: transparent !important;
+	
+}
+.nav-dropdown li:hover {	
+	background-color:#06ae5a !important;
+	}
+	
+	.loi{
+		font-size:180px !important;
+		margin-top:-90px !important;
+	}
+	.loiich{
+		font-size:38px !important;
+	}
+	
+	.gioi-thieu .col{
+		padding-bottom:0px !important;
+	}
+	.nhom-san-pham .col{
+		padding-bottom:0px !important;
+	}
+
+	
+	.category-filter-row{
+		display:none;
+	}	
+	
+	
+	
+
+.flickity-slider .post-item{
+	height:450px !important;
+}
+
+.flickity-slider .post-item .col-inner .box-blog-post .blog-post-inner{
+	height:300px !important;
+}
+.blog-post-inner button{
+    position:absolute;
+    bottom:0px;
+    right:25%;
+}
+	
+	
+	
+	
+	#logo:after,#logo:before{transform: skewX(-25deg) translateY(-50%);content:"";position:absolute;top:50%;width:40px;height:100%;background-color:white;z-index:0}
+#logo:before{left:0%;animation:light-left 5s infinite alternate linear}
+#logo:after{right:-5%;animation:light-right 5s infinite alternate linear}
+
+@keyframes light-left{0%{left:-5%;opacity:0}50%{left:50%;opacity:1}to{left:105%;opacity:0}}@keyframes light-right{0%{right:-5%;opacity:0}50%{right:50%;opacity:1}to{right:105%;opacity:0}}	
+
+	
+	
+}
+/*   DONE CSS trên Desktop     */
+/** CSS Cho Tất Cả Thiết Bị **/
+
+/*/ CSS thanh tìm kiếm /*/
+.header-nav .searchform{
+	width:267px;
+}
+.header-nav .button.submit-button.button.submit-button{
+	border-top: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	border-left: 0px;
+	box-sizing: border-box;
+    padding: 0 0.75em;
+    height: 2.507em;
+    font-size: .97em;
+    border-radius: 0;
+    max-width: 100%;
+    width: 100%;
+    vertical-align: middle;
+    background-color: #fff;
+    color: #333;
+	  transition: color .3s,border .3s,background .3s,opacity .3s;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    -webkit-transition: color .3s,border .3s,background .3s,opacity .3s;
+    -o-transition: color .3s,border .3s,background .3s,opacity .3s;
+}
+@media only screen and (max-width: 850px) {
+
+	.loi{
+		font-size:100px !important;
+		margin-top:-30px !important;
+	}
+	.loiich{
+		font-size:20px !important;
+		padding-top:20px;
+	}
+	.loi-ich-phan-bon{
+		padding: 0px 20px;
+	}
+/*/          DONE         /*/
+/*/ CSS Lướt Bóng cho LOGO /*/
+
+#logo:after,#logo:before{transform: skewX(-25deg) translateY(-50%);content:"";position:absolute;top:50%;width:40px;height:100%;background-color:white;z-index:0}
+#logo:before{left:0%;animation:light-left 5s infinite alternate linear}
+#logo:after{right:-5%;animation:light-right 5s infinite alternate linear}
+
+@keyframes light-left{0%{left:-5%;opacity:0}50%{left:50%;opacity:1}to{left:105%;opacity:0}}@keyframes light-right{0%{right:-5%;opacity:0}50%{right:50%;opacity:1}to{right:105%;opacity:0}}	
+}
+/*/          DONE         /*/
+/*/ CSS Lướt Bóng cho LOGO /*/
+
+
+.header-nav .search-field{
+		border-right:0px;
+}
+
+/** CSS phần Menu Contact **/
+.mystickyelements-icon-below-text{
+	color: black;
+}
+.mystickyelements-fixed.mystickyelements-position-mobile-bottom ul li.mystickyelements-minimize{
+	display:none
+}
+.mystickyelements-fixed.mystickyelements-position-mobile-bottom ul li,.mystickyelements-fixed.mystickyelements-position-mobile-bottom.mystickyelements-bottom-social-channel-6 ul li{
+	width:20%;
+}
+
+element.style {
+}
+span.mystickyelements-social-icon, span.mystickyelements-social-icon a{
+	width:80px;
+}
+
+
+.mystickyelements-position-mobile-bottom ul.mystickyno-minimize li,.mystickyelements-position-mobile-bottom.mystickyelements-bottom-social-channel-5 ul.mystickyno-minimize li{
+	width:20%;
+}
+
+.mystickyelements-mobile-size-large.mystickyelements-position-mobile-bottom{
+	height:80px;
+}
+.mystickyelements-mobile-size-large.mystickyelements-position-mobile-bottom span.mystickyelements-social-icon{
+	height:65px;
+}
+.social-custom_channel_4 img{
+	width:45px !important;
+	height:45px !important;
+}
+.mystickyno-minimize img:hover{
+	width:45px !important;
+	height:45px !important;
+	
+}
+.social-custom_channel_4{
+	padding-bottom:15px;
+}
+.social-custom_channel_4 .mystickyelements-icon-below-text{
+	padding-top:5px;
+}
+.mystickyelement-lists-wrap{
+	border-radius:10px;
+	background: #F5F5F5;
+	margin:5px;
+}
+/** Done **/
+.mystickyelements-fixed{
+	z-index:100;
+}
+		
+
+.accordion-title.active{
+	background-color:#075f33 !important;
+	color:white !important;
+	font-weight:500;
+}
+.blog-post-inner .from_the_blog_excerpt{
+	text-align:justify;
+}
+
+.accordion-inner {
+    padding: 1em;
+		text-align:justify;
+}
+
+
+
+
+.product-small .box-text .category{
+	color:black;
+	font-weight:600 !important;
+}
+.product-small .box-text .product-title{
+    font-weight: 600 !important;
+	height: 45px;
+}
+
+
+
+.text-justify{
+	text-align:justify;
+}	
+
+
+.product-footer {
+	color:#0A0A0A !important;
+}
+
+.nav-tabs+.tab-panels {
+    border: 0px solid #fff; 
+    background-color: #fff;
+    padding: 0px;
+}
+
+
+.tab-panels h2{
+	color: white;
+	background: #1a622b;
+	line-height: 2;
+	text-align:center;
+}
+
+#product-2600 h2,
+#product-2603 h2,
+#product-2593 h2,
+#product-2596 h2,
+#product-2545 h2,
+#product-2551 h2,
+#product-2571 h2
+{
+	color: white;
+	background: #FFD700;
+	line-height: 2;
+	text-align:center;
+}
+#product-2557 h2{
+	color: white;
+	background: #CC0000;
+	line-height: 2;
+	text-align:center;
+}
+
+
+
+#product-2600 .product-container,
+#product-2567 .product-container,
+#product-2575 .product-container,
+#product-2579 .product-container,
+#product-2585 .product-container,
+#product-2590 .product-container,
+#product-2593 .product-container,
+#product-2596 .product-container {
+	background-image:url("https://ttpglobal.com.vn/wp-content/uploads/2023/07/HumiK-Bio-head.jpg") !important;
+	background-repeat:no-repeat;
+  background-position: center top;
+}
+
+
+#product-2545 .product-container,
+#product-2571 .product-container,
+#product-2603 .product-container
+{
+	background-image:url("https://ttpglobal.com.vn/wp-content/uploads/2023/07/Ful-Grow-NBG.jpg") !important;
+	background-repeat:no-repeat;
+  background-position: center top;
+}
+
+
+.product-info, .product-gallery-slider img{
+    background-color: #ffffffd4;
+    border-radius: 10px;
+}
+.yikes-custom-woo-tab-title{
+	display:none;
+}
+.product-info{
+	color:#0A0A0A;
+}
+.product-info h1{
+	padding-top:20px;
+	color:#1a622b;
+	text-transform:uppercase;
+	text-align:center;
+}
+
+
+.humikwsg {
+	background-image:url("https://ttpglobal.com.vn/wp-content/uploads/2023/07/Humi-K-WSG-VBG-OPT2-1.gif") !important;
+	background-size:83%;
+	background-repeat:no-repeat;
+  background-position: center top;
+}
+
+div#div_video {
+    margin-top: 30px;
+    position: absolute;
+}
+
+
+.nav-dark .nav>li.html{
+	text-align:center;
+	padding-left: 25%;
+}
+
+
+.box-image {
+    border-radius: 5px;
+}
+
+.menu-gia-nong-san .col{
+	height: 100px;
+}
+.menu-gia-nong-san .col .icon-box .icon-box-img{
+	height: 50px;
+}
+.menu-gia-nong-san .col .icon-box .icon-box-text{
+	line-height: 18px;
+}
+.menu-gia-nong-san .col .icon-box:hover .icon-box-text.last-reset h4{
+	color: #ff0000;
+}
+.menu-gia-nong-san .col a.tpactive .icon-box-text.last-reset h4{
+	color: #ff0000;
+}
+
+.ftwp-in-post#ftwp-container-outer.ftwp-float-none #ftwp-contents {
+    width: 100%;
+}
+.wp-block-image figcaption {
+    text-align: center;
+}
+.post .wp-block-image{
+	  text-align: center;
+		padding-bottom:15px;
+}
+
+
+
+span.amount {
+	color:red;
+}
+
+@media (max-width:764px) {
+	.product-small .box-text .product-title{
+		height: 60px;
+	}
+	.bgtruyenhinh .fill {
+    background-size: 100% !important;
+}
+}
+
+div#pum_popup_title_5043 {
+ padding-left: 15px;
+}
+.pum-theme-2698.pum-content, .pum-theme-ng .pum-content {
+    padding: 0px!important;
+}
+div#pum_popup_title_5043 {
+    background:#005500!important;
+}
+div#pum_popup_title_5043 {
+    font-size: 20px;
+    padding-left: 10px;
+    color: #FFF;
+    font-weight: bold;
+background:#005500;
+}
+div#popmake-5043{
+    padding: 0px!important;
+}
+#popmake-5043 .pum-title {
+    margin-bottom: 0px!important;
+}
+#popmake-5043 img.size-full.alignnone {
+    margin-bottom: 0em; 
+	    width: 100%;
+}
+div#popmake-5067 {
+    box-shadow: unset;
+    border: 0px;
+    background: transparent;
+}
+
+.color-footer a{
+	color:white;
+}
+
+.woocommerce-form-coupon-toggle {
+	display: none !important;
+}
+.checkout_coupon.woocommerce-form-coupon {
+	display: block !important;
+	margin-top: 20px !important;
+}
+.checkout_coupon.woocommerce-form-coupon p:first-child {
+	font-weight: 700;
+}
+.checkout_coupon.woocommerce-form-coupon p {
+	display: block !important;
+}
+.checkout_coupon.woocommerce-form-coupon input[name="coupon_code"] {
+	min-width: 171px !important;
+}
+.checkout_coupon.woocommerce-form-coupon button {
+	width: 160px;
+	margin-top: 4px !important;
+	font-size: 12px !important;
+	line-height: 12px !important;
+	font-weight: 500 !important;
+}
+
+.article-inner .relative{
+	display:none;
+}
+
+div#pum_popup_title_2696 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: #FFF;
+}
+
+.pum-theme-2698.pum-content
+{
+	/*
+background:#FFF;
+	*/
+}
+div#evf-2695-field_message-container
+{
+	margin-bottom:0px;
+	
+}
+.pum-theme-2698 .pum-container {
+	  height: fit-content;
+bottom:0;
+    padding: 0px;
+    border-radius: 0px;
+	/*
+    border: 1px none #000000;
+    box-shadow: 1px 1px 3px 0px rgba(2, 2, 2, 0.23);
+    background-color: rgba(249, 249, 249, 1.00);
+*/	
+}
+.pum-theme-2698 .pum-title {
+    padding-bottom: 8px;
+    padding-top: 8px;
+padding-left:10px
+    color: #FFF;
+    background: #005500;
+    text-align: left;
+    text-shadow: 0px 0px 0px rgba(2, 2, 2, 0.23);
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 22px;
+}
+
+#evf-form-2695 .evf-submit-container {
+ float: right;
+margin: 0px;
+    padding: 0px
+}
+button#evf-submit-2695 {
+    color: #FFF;
+    background: #005500;
+	display: none;
+}
+
+.badge-inner{
+	background-color:#DD0000;
+}
+.badge-container {
+    margin: 35% 0 0 0;
+	display: none;
+}
+
+.markdown-main-panel ul,ol{
+	  margin-left: 3%;
+}
+div#banner-263840242 .fill{
+ background-size: contain!important;	
+}
+.bgtruyenhinh{
+ background-size: contain!important;
+}
+.bgtruyenhinh .fill {
+    background-size: 100% !important;
+}
+.bgtruyenhinh .bg.bg-loaded {
+    background-size: contain !important;
+   background-size: 100% 100% !important;
+}
+
+
+@media (max-width:764px) {
+
+.bannertrangchu {
+    height: 124px !important;
+}
+	.bgtruyenhinh .bg.bg-loaded
+	{
+		background-size:100%!important;
+	}
+
+	.bannerphanhuuconhapkhau h1, .phanbonhhuco h1,.phanbonhhuco h2,.phanbonhhuco h3  {
+    font-size: 0.9rem;
+    margin-top: -125px;
+}
+	.phanbonhhuco h3  {
+		  font-size: 0.9rem;
+    margin-top: 15px;
+	}
+}
+.pum-theme-2698 .pum-container, .pum-theme-ng .pum-container {
+    padding: 18px;
+    border-radius: 0px;
+    border: 1px none #000000;
+    box-shadow: unset!important;
+    background-color: unset!important;
+}
+.classcolbanner {
+    margin-bottom: -40px;
+    padding: 0px;
+}
+#metaslider_9062 .flex-control-paging li a.flex-active {
+    background: #fff;
+
+    cursor: default;
+}
+
+#metaslider_9062 .flex-control-paging li a {
+ background: #fff;
+  background: rgb(255 255 255 / 50%);
+}
+#metaslider_9062 ol.flex-control-nav.flex-control-paging
+{
+	bottom:10px;
+}
+div#evf-2695 {
+    background: #FFF;
+}		</style>
+		<noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>
+</head>
+
+<body class="post-template-default single single-post postid-8903 single-format-standard wp-custom-logo theme-flatsome everest-forms-no-js woocommerce-no-js woo-variation-swatches wvs-behavior-blur wvs-theme-flatsome wvs-show-label wvs-tooltip full-width lightbox nav-dropdown-has-arrow mobile-submenu-toggle wpb-js-composer js-comp-ver-6.2.0 vc_responsive has-ftoc">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LT9KC48"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+
+<div id="wrapper">
+
+	
+	<header id="header" class="header ">
+		<div class="header-wrapper">
+			<div id="masthead" class="header-main hide-for-sticky nav-dark">
+      <div class="header-inner flex-row container logo-left medium-logo-center" role="navigation">
+
+          <!-- Logo -->
+          <div id="logo" class="flex-col logo">
+            
+<!-- Header logo -->
+<a href="https://ttpglobal.com.vn/" title="TTPGLOBAL " rel="home">
+		<img width="900" height="900" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20900%20900'%3E%3C/svg%3E" class="header_logo header-logo" alt="TTPGLOBAL " data-lazy-src="https://ttpglobal.com.vn/wp-content/uploads/2024/01/TTP-v2_900px.png"/><noscript><img width="900" height="900" src="https://ttpglobal.com.vn/wp-content/uploads/2024/01/TTP-v2_900px.png" class="header_logo header-logo" alt="TTPGLOBAL "/></noscript><img  width="900" height="900" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20900%20900'%3E%3C/svg%3E" class="header-logo-dark" alt="TTPGLOBAL " data-lazy-src="https://ttpglobal.com.vn/wp-content/uploads/2024/01/TTP-v2_900px.png"/><noscript><img  width="900" height="900" src="https://ttpglobal.com.vn/wp-content/uploads/2024/01/TTP-v2_900px.png" class="header-logo-dark" alt="TTPGLOBAL "/></noscript></a>
+          </div>
+
+          <!-- Mobile Left Elements -->
+          <div class="flex-col show-for-medium flex-left">
+            <ul class="mobile-nav nav nav-left ">
+              <li class="nav-icon has-icon">
+  		<a href="#" data-open="#main-menu" data-pos="left" data-bg="main-menu-overlay" data-color="" class="is-small" aria-label="Menu" aria-controls="main-menu" aria-expanded="false">
+		
+		  <i class="icon-menu" ></i>
+		  		</a>
+	</li>            </ul>
+          </div>
+
+          <!-- Left Elements -->
+          <div class="flex-col hide-for-medium flex-left
+            flex-grow">
+            <ul class="header-nav header-nav-main nav nav-left  nav-spacing-large nav-uppercase" >
+              <li class="html custom html_topbar_left"><img width="80%" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2080%200'%3E%3C/svg%3E" data-lazy-src="https://ttpglobal.com.vn/wp-content/uploads/2023/07/1-01.jpg"><noscript><img width="80%" src="https://ttpglobal.com.vn/wp-content/uploads/2023/07/1-01.jpg"></noscript></li>            </ul>
+          </div>
+
+          <!-- Right Elements -->
+          <div class="flex-col hide-for-medium flex-right">
+            <ul class="header-nav header-nav-main nav nav-right  nav-spacing-large nav-uppercase">
+              <li class="html custom html_top_right_text"><img width="280" height="70" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20280%2070'%3E%3C/svg%3E" data-lazy-src="https://ttpglobal.com.vn/wp-content/uploads/2023/07/Hotline.png"><noscript><img width="280" height="70" src="https://ttpglobal.com.vn/wp-content/uploads/2023/07/Hotline.png"></noscript></li>            </ul>
+          </div>
+
+          <!-- Mobile Right Elements -->
+          <div class="flex-col show-for-medium flex-right">
+            <ul class="mobile-nav nav nav-right ">
+              <li class="cart-item has-icon">
+
+      <a href="https://ttpglobal.com.vn/cart-2/" class="header-cart-link off-canvas-toggle nav-top-link is-small" data-open="#cart-popup" data-class="off-canvas-cart" title="Giỏ hàng" data-pos="right">
+  
+    <span class="cart-icon image-icon">
+    <strong>0</strong>
+  </span>
+  </a>
+
+
+  <!-- Cart Sidebar Popup -->
+  <div id="cart-popup" class="mfp-hide widget_shopping_cart">
+  <div class="cart-popup-inner inner-padding">
+      <div class="cart-popup-title text-center">
+          <h4 class="uppercase">Giỏ hàng</h4>
+          <div class="is-divider"></div>
+      </div>
+      <div class="widget_shopping_cart_content">
+          
+
+	<p class="woocommerce-mini-cart__empty-message">Chưa có sản phẩm trong giỏ hàng.</p>
+
+
+      </div>
+             <div class="cart-sidebar-content relative"></div>  </div>
+  </div>
+
+</li>
+            </ul>
+          </div>
+      </div>
+     
+            <div class="container">
+		  <div class="inner">&nbsp;</div>
+		  <div class="top-divider full-width"></div>
+	
+	</div>
+      </div><div id="wide-nav" class="header-bottom wide-nav hide-for-sticky nav-dark flex-has-center hide-for-medium">
+    <div class="flex-row container">
+
+            
+                        <div class="flex-col hide-for-medium flex-center">
+                <ul class="nav header-nav header-bottom-nav nav-center  nav-line-bottom nav-size-medium nav-spacing-xlarge nav-uppercase">
+                    <li id="menu-item-3697" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-3697 menu-item-design-default"><a href="https://ttpglobal.com.vn/" class="nav-top-link">TRANG CHỦ</a></li>
+<li id="menu-item-6877" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-6877 menu-item-design-default"><a href="https://ttpglobal.com.vn/danh-muc/phan-bon-huu-co/" class="nav-top-link">PHÂN BÓN HỮU CƠ</a></li>
+<li id="menu-item-368" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-368 menu-item-design-default"><a href="https://ttpglobal.com.vn/kien-thuc-nha-nong/" class="nav-top-link">KIẾN THỨC NHÀ NÔNG</a></li>
+<li id="menu-item-4765" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-has-children menu-item-4765 menu-item-design-default has-dropdown"><a href="https://ttpglobal.com.vn/tin-tuc/" class="nav-top-link">TIN TỨC<i class="icon-angle-down" ></i></a>
+<ul class="sub-menu nav-dropdown nav-dropdown-simple dark">
+	<li id="menu-item-4773" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-4773 active"><a href="https://ttpglobal.com.vn/tin-tuc/thi-truong/">Giá cả thị trường</a></li>
+	<li id="menu-item-9338" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9338"><a href="https://ttpglobal.com.vn/tin-tuc/huu-co-cho-nong-san-viet/">Hũu cơ cho nông sản Việt</a></li>
+	<li id="menu-item-9144" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9144"><a href="https://ttpglobal.com.vn/tin-tuc/su-kien/">Sự kiện</a></li>
+</ul>
+</li>
+<li id="menu-item-351" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-351 menu-item-design-default"><a href="https://ttpglobal.com.vn/gioi-thieu-ttp-global/" class="nav-top-link">GIỚI THIỆU</a></li>
+<li id="menu-item-6925" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-6925 menu-item-design-default"><a href="https://ttpglobal.com.vn/chieu-mo-dai-ly-phan-huu-co-my-cao-cap/" class="nav-top-link">ỨNG TUYỂN ĐẠI LÝ</a></li>
+<li style="position:relative;" class="menu-item menu-item-gtranslate gt-menu-27616"></li><li class="header-search header-search-lightbox has-icon">
+	<div class="header-button">		<a href="#search-lightbox" aria-label="Tìm kiếm" data-open="#search-lightbox" data-focus="input.search-field"
+		class="icon primary button round is-small">
+		<i class="icon-search" style="font-size:16px;"></i></a>
+		</div>
+		
+	<div id="search-lightbox" class="mfp-hide dark text-center">
+		<div class="searchform-wrapper ux-search-box relative is-large"><form role="search" method="get" class="searchform" action="https://ttpglobal.com.vn/">
+	<div class="flex-row relative">
+						<div class="flex-col flex-grow">
+			<label class="screen-reader-text" for="woocommerce-product-search-field-0">Tìm kiếm:</label>
+			<input type="search" id="woocommerce-product-search-field-0" class="search-field mb-0" placeholder="Tìm kiếm..." value="" name="s" />
+			<input type="hidden" name="post_type" value="product" />
+					</div>
+		<div class="flex-col">
+			<button type="submit" value="Tìm kiếm" class="ux-search-submit submit-button secondary button icon mb-0" aria-label="Submit">
+				<i class="icon-search" ></i>			</button>
+		</div>
+	</div>
+	<div class="live-search-results text-left z-top"></div>
+</form>
+</div>	</div>
+</li>
+                </ul>
+            </div>
+            
+            
+            
+    </div>
+</div>
+
+<div class="header-bg-container fill"><div class="header-bg-image fill"></div><div class="header-bg-color fill"></div></div>		</div>
+	</header>
+
+	
+	<main id="main" class="">
+
+<div id="content" class="blog-wrapper blog-single page-wrapper">
+	
+<div class="row align-center">
+	<div class="large-10 col">
+	
+	
+
+
+<article id="post-8903" class="post-8903 post type-post status-publish format-standard has-post-thumbnail hentry category-thi-truong post-ftoc">
+	<div class="article-inner ">
+		<header class="entry-header">
+	<div class="entry-header-text entry-header-text-top text-left">
+		<h6 class="entry-category is-xsmall">
+	<a href="https://ttpglobal.com.vn/tin-tuc/thi-truong/" rel="category tag">Giá cả thị trường</a></h6>
+
+<h1 class="entry-title">Cập nhật giá nông sản hôm nay 15/01/2025</h1>
+<div class="entry-divider is-divider small"></div>
+
+	<div class="entry-meta uppercase is-xsmall">
+		<span class="posted-on">Posted on <a href="https://ttpglobal.com.vn/cap-nhat-gia-nong-san-hom-nay-15-01-2025/" rel="bookmark"><time class="entry-date published" datetime="2025-01-15T08:00:00+07:00">15 Tháng Một, 2025</time><time class="updated" datetime="2025-02-07T10:27:17+07:00">7 Tháng Hai, 2025</time></a></span><span class="byline"> by <span class="meta-author vcard"><a class="url fn n" href="https://ttpglobal.com.vn/author/diem-trinhnhigia-vn/">diem.trinh@nhigia.vn</a></span></span>	</div>
+	</div>
+						<div class="entry-image relative">
+				<a href="https://ttpglobal.com.vn/cap-nhat-gia-nong-san-hom-nay-15-01-2025/">
+    <img width="900" height="504" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20900%20504'%3E%3C/svg%3E" class="attachment-large size-large wp-post-image" alt="Cập nhật giá nông sản hôm nay" decoding="async" fetchpriority="high" data-lazy-srcset="https://ttpglobal.com.vn/wp-content/uploads/2025/01/NGAY-16122024-25.jpg 900w, https://ttpglobal.com.vn/wp-content/uploads/2025/01/NGAY-16122024-25-768x430.jpg 768w, https://ttpglobal.com.vn/wp-content/uploads/2025/01/NGAY-16122024-25-600x336.jpg 600w" data-lazy-sizes="(max-width: 900px) 100vw, 900px" title="cập nhật giá nông sản hôm nay 15/01/2025 count(title)" data-lazy-src="https://ttpglobal.com.vn/wp-content/uploads/2025/01/NGAY-16122024-25.jpg"><noscript><img width="900" height="504" src="https://ttpglobal.com.vn/wp-content/uploads/2025/01/NGAY-16122024-25.jpg" class="attachment-large size-large wp-post-image" alt="Cập nhật giá nông sản hôm nay" decoding="async" fetchpriority="high" srcset="https://ttpglobal.com.vn/wp-content/uploads/2025/01/NGAY-16122024-25.jpg 900w, https://ttpglobal.com.vn/wp-content/uploads/2025/01/NGAY-16122024-25-768x430.jpg 768w, https://ttpglobal.com.vn/wp-content/uploads/2025/01/NGAY-16122024-25-600x336.jpg 600w" sizes="(max-width: 900px) 100vw, 900px" title="cập nhật giá nông sản hôm nay 15/01/2025 count(title)"></noscript></a>
+				<div class="badge absolute top post-date badge-circle">
+	<div class="badge-inner">
+		<span class="post-date-day">15</span><br>
+		<span class="post-date-month is-small">Th1</span>
+	</div>
+</div>			</div>
+			</header>
+		<div class="entry-content single-page">
+
+	<div id="ftwp-postcontent">
+<div class="kk-star-ratings
+     kksr-valign-top     kksr-align-left    "
+    data-payload="{&quot;align&quot;:&quot;left&quot;,&quot;id&quot;:&quot;8903&quot;,&quot;slug&quot;:&quot;default&quot;,&quot;valign&quot;:&quot;top&quot;,&quot;reference&quot;:&quot;auto&quot;,&quot;count&quot;:&quot;10&quot;,&quot;readonly&quot;:&quot;&quot;,&quot;score&quot;:&quot;5&quot;,&quot;best&quot;:&quot;5&quot;,&quot;gap&quot;:&quot;5&quot;,&quot;greet&quot;:&quot;Rate this post&quot;,&quot;legend&quot;:&quot;5\/5 - (10 b\u00ecnh ch\u1ecdn)&quot;,&quot;size&quot;:&quot;24&quot;,&quot;width&quot;:&quot;142.5&quot;,&quot;_legend&quot;:&quot;{score}\/{best} - ({count} {votes})&quot;}">
+    
+<div class="kksr-stars">
+    
+<div class="kksr-stars-inactive">
+            <div class="kksr-star" data-star="1" style="padding-right: 5px">
+            
+
+<div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="2" style="padding-right: 5px">
+            
+
+<div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="3" style="padding-right: 5px">
+            
+
+<div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="4" style="padding-right: 5px">
+            
+
+<div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" data-star="5" style="padding-right: 5px">
+            
+
+<div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+    </div>
+    
+<div class="kksr-stars-active" style="width: 142.5px;">
+            <div class="kksr-star" style="padding-right: 5px">
+            
+
+<div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" style="padding-right: 5px">
+            
+
+<div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" style="padding-right: 5px">
+            
+
+<div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" style="padding-right: 5px">
+            
+
+<div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+            <div class="kksr-star" style="padding-right: 5px">
+            
+
+<div class="kksr-icon" style="width: 24px; height: 24px;"></div>
+        </div>
+    </div>
+</div>
+    
+<div class="kksr-legend">
+            5/5 - (10 bình chọn)    </div>
+</div>
+
+<p><em>Giá tiêu trong nước hôm nay tiếp tục giảm từ 1.000 &#8211; 2.000 đồng/kg, hiện dao động trong khoảng 145.000 &#8211; 147.000 đồng/kg. Trong khi đó, giá tiêu Indonesia trên thị trường quốc tế lại tăng mạnh, trong khi giá tiêu Việt Nam vẫn duy trì xu hướng ổn định.</em></p>
+
+
+
+<p>&#8211;> Cập nhật <strong><a href="https://ttpglobal.com.vn/cap-nhat-gia-nong-san-hom-nay-16-01-2025/">giá nông sản hôm nay 16/01/2025</a></strong></p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img decoding="async" width="900" height="504" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20900%20504'%3E%3C/svg%3E" alt="Cập nhật giá nông sản hôm nay" class="wp-image-8905" data-lazy-srcset="https://ttpglobal.com.vn/wp-content/uploads/2025/01/NGAY-16122024-25.jpg 900w, https://ttpglobal.com.vn/wp-content/uploads/2025/01/NGAY-16122024-25-768x430.jpg 768w, https://ttpglobal.com.vn/wp-content/uploads/2025/01/NGAY-16122024-25-600x336.jpg 600w" data-lazy-sizes="(max-width: 900px) 100vw, 900px" title="cập nhật giá nông sản hôm nay 15/01/2025 count(title)" data-lazy-src="https://ttpglobal.com.vn/wp-content/uploads/2025/01/NGAY-16122024-25.jpg"><noscript><img decoding="async" width="900" height="504" src="https://ttpglobal.com.vn/wp-content/uploads/2025/01/NGAY-16122024-25.jpg" alt="Cập nhật giá nông sản hôm nay" class="wp-image-8905" srcset="https://ttpglobal.com.vn/wp-content/uploads/2025/01/NGAY-16122024-25.jpg 900w, https://ttpglobal.com.vn/wp-content/uploads/2025/01/NGAY-16122024-25-768x430.jpg 768w, https://ttpglobal.com.vn/wp-content/uploads/2025/01/NGAY-16122024-25-600x336.jpg 600w" sizes="(max-width: 900px) 100vw, 900px" title="cập nhật giá nông sản hôm nay 15/01/2025 count(title)"></noscript></figure></div>
+
+
+<div id="ftwp-container-outer" class="ftwp-in-post ftwp-float-none"><div id="ftwp-container" class="ftwp-wrap ftwp-hidden-state ftwp-minimize ftwp-middle-right"><button type="button" id="ftwp-trigger" class="ftwp-shape-round ftwp-border-medium" title="click To Maximize The Table Of Contents"><span class="ftwp-trigger-icon ftwp-icon-number"></span></button><nav id="ftwp-contents" class="ftwp-shape-square ftwp-border-medium"><header id="ftwp-header"><span id="ftwp-header-control" class="ftwp-icon-number"></span><button type="button" id="ftwp-header-minimize" class="ftwp-icon-expand" aria-labelledby="ftwp-header-title" aria-label="Expand or collapse"></button><h3 id="ftwp-header-title">Contents</h3></header><ol id="ftwp-list" class="ftwp-liststyle-none ftwp-effect-bounce-to-right ftwp-list-nest ftwp-strong-first ftwp-colexp ftwp-colexp-icon"><li class="ftwp-item"><a class="ftwp-anchor" href="#1-thi-truong-lua-gao"><span class="ftwp-text">1. Giá lúa gạo hôm nay</span></a></li><li class="ftwp-item"><a class="ftwp-anchor" href="#2-thi-truong-sau-rieng"><span class="ftwp-text">2. Giá sầu riêng hôm nay</span></a></li><li class="ftwp-item"><a class="ftwp-anchor" href="#3-thi-truong-ca-phe-va-ho-tieu"><span class="ftwp-text">3. Giá cà phê và hồ tiêu hôm nay</span></a></li></ol></nav></div></div><h2 id="1-thi-truong-lua-gao" class="wp-block-heading ftwp-heading">1. Giá lúa gạo hôm nay</h2>
+
+
+
+<p>Theo thông tin từ Sở Nông nghiệp và Phát triển Nông thôn tỉnh An Giang, giá lúa hiện nay ghi nhận sự giảm nhẹ so với cuối tuần trước:</p>
+
+
+
+<ul>
+<li><strong>Lúa IR 50404 (tươi)</strong>: 6.200 &#8211; 6.400 đồng/kg, giảm 900 đồng/kg.</li>
+
+
+
+<li><strong>Lúa OM 5451</strong>: 6.500 &#8211; 6.700 đồng/kg, giảm 900 đồng/kg.</li>
+
+
+
+<li><strong>Lúa OM 18 (tươi)</strong>: 7.600 &#8211; 7.800 đồng/kg.</li>
+
+
+
+<li><strong>Lúa Đài Thơm 8 (tươi)</strong>: 7.600 &#8211; 7.800 đồng/kg.</li>
+
+
+
+<li><strong>Lúa OM 380</strong>: 6.600 &#8211; 6.700 đồng/kg.</li>
+
+
+
+<li><strong>Lúa Nhật</strong>: 7.800 &#8211; 8.000 đồng/kg.</li>
+
+
+
+<li><strong>Lúa Nàng Hoa 9</strong>: 9.200 đồng/kg.</li>
+</ul>
+
+
+
+<p>Về mặt hàng gạo:</p>
+
+
+
+<ul>
+<li><strong>Gạo nguyên liệu IR 504</strong>: 7.650 &#8211; 7.750 đồng/kg, tăng 100 đồng/kg.</li>
+
+
+
+<li><strong>Gạo thành phẩm IR 504</strong>: 9.500 &#8211; 9.700 đồng/kg.</li>
+</ul>
+
+
+
+<h2 id="2-thi-truong-sau-rieng" class="wp-block-heading ftwp-heading">2. Giá sầu riêng hôm nay</h2>
+
+
+
+<p>Thị trường sầu riêng ghi nhận mức giảm đáng kể khi nhiều kho tạm ngừng thu mua. Giá sầu riêng Ri6 A hiện dao động từ 97.000 – 104.000 đồng/kg, giảm 3.000 – 8.000 đồng/kg so với trước đó. Bà con nông dân cần chú ý theo dõi tình hình để có kế hoạch thu hoạch và tiêu thụ phù hợp.</p>
+
+
+
+<ul>
+<li><strong>Khu vực miền Tây – Đồng bằng sông Cửu Long (ĐBSCL)</strong></li>
+</ul>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td><strong>Loại sầu riêng</strong></td><td><strong>Loại A (đồng/kg)</strong></td><td><strong>Loại B (đồng/kg)</strong></td><td><strong>Loại C (đồng/kg)</strong></td></tr><tr><td>Ri6</td><td>97.000 &#8211; 104.000</td><td>77.000 &#8211; 84.000</td><td>Thương lượng</td></tr><tr><td>Thái</td><td>170.000 &#8211; 185.000</td><td>150.000 &#8211; 170.000</td><td>80.000</td></tr><tr><td>Chuồng Bò</td><td>98.000 &#8211; 100.000</td><td>78.000 &#8211; 80.000</td><td>50.000</td></tr></tbody></table></figure>
+
+
+
+<ul>
+<li><strong>Khu vực Đông Nam Bộ</strong></li>
+</ul>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td><strong>Loại sầu riêng</strong></td><td><strong>Loại A (đồng/kg)</strong></td><td><strong>Loại B (đồng/kg)</strong></td><td><strong>Loại C (đồng/kg)</strong></td></tr><tr><td>Ri6</td><td>95.000 &#8211; 102.000</td><td>75.000 &#8211; 82.000</td><td>45.000 &#8211; 47.000</td></tr><tr><td>Thái</td><td>170.000 &#8211; 185.000</td><td>150.000 &#8211; 160.000</td><td>75.000 &#8211; 80.000</td></tr></tbody></table></figure>
+
+
+
+<ul>
+<li><strong>Khu vực Tây Nguyên</strong></li>
+</ul>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td><strong>Loại sầu riêng</strong></td><td><strong>Loại A (đồng/kg)</strong></td><td><strong>Loại B (đồng/kg)</strong></td><td><strong>Loại C (đồng/kg)</strong></td></tr><tr><td>Ri6</td><td>95.000 &#8211; 104.000</td><td>75.000 &#8211; 85.000</td><td>45.000 &#8211; 47.000</td></tr><tr><td>Thái</td><td>170.000 &#8211; 185.000</td><td>150.000 &#8211; 165.000</td><td>75.000 &#8211; 80.000</td></tr></tbody></table></figure>
+
+
+
+<h2 id="3-thi-truong-ca-phe-va-ho-tieu" class="wp-block-heading ftwp-heading">3. Giá cà phê và hồ tiêu hôm nay</h2>
+
+
+
+<p><strong>Giá cà phê hôm nay</strong></p>
+
+
+
+<p>Giá cà phê hôm nay: Giảm mạnh tại khu vực Tây Nguyên</p>
+
+
+
+<ul>
+<li><strong>Đắk Nông</strong>: 115.500 đồng/kg, giảm 2.700 đồng/kg so với hôm qua.</li>
+
+
+
+<li><strong>Đắk Lắk</strong>: 115.200 đồng/kg, giảm 2.800 đồng/kg.</li>
+
+
+
+<li><strong>Gia Lai</strong>: 115.200 đồng/kg, giảm 2.800 đồng/kg.</li>
+
+
+
+<li><strong>Lâm Đồng</strong>: 114.700 đồng/kg, giảm 3.000 đồng/kg tại các huyện Di Linh, Lâm Hà, Bảo Lộc.</li>
+</ul>
+
+
+
+<p>Giá cà phê đã giảm mạnh trong phiên giao dịch sáng nay, gây ảnh hưởng đến thu nhập của nông dân tại các tỉnh Tây Nguyên.</p>
+
+
+
+<p><strong>Cập nhật giá tiêu hôm nay:</strong></p>
+
+
+
+<p>Giá tiêu hôm nay tiếp tục giảm mạnh tại các vùng trọng điểm</p>
+
+
+
+<ul>
+<li><strong>Đắk Nông</strong>: 146.000 đồng/kg, giảm 1.200 đồng/kg.</li>
+
+
+
+<li><strong>Gia Lai</strong>: 145.000 đồng/kg, giảm 2.000 đồng/kg.</li>
+
+
+
+<li><strong>Đắk Lắk</strong>: 145.000 đồng/kg, giảm 2.000 đồng/kg.</li>
+
+
+
+<li><strong>Bình Phước và Đồng Nai</strong>: 146.000 đồng/kg, giảm 1.000 đồng/kg.</li>
+
+
+
+<li><strong>Bà Rịa &#8211; Vũng Tàu</strong>: 147.000 đồng/kg, không thay đổi.</li>
+</ul>
+
+
+
+<p>Mức giá thấp nhất hiện ghi nhận tại <strong>Gia Lai</strong> và <strong>Đắk Lắk</strong> với 145.000 đồng/kg.</p>
+
+
+
+<p>Giá nông sản hôm nay chỉ mang tính chất tham khảo, có thể thay đổi theo thực tế của thị trường mà không thông báo trước. Bà con cân nhắc khi sử dụng thông tin ở bảng giá này để áp dụng vào việc mua bán.</p>
+
+
+
+<p>Nguồn: Tổng hợp</p>
+</div>
+	
+	<div class="blog-share text-center"><div class="is-divider medium"></div><div class="social-icons share-icons share-row relative" ><a href="whatsapp://send?text=C%E1%BA%ADp%20nh%E1%BA%ADt%20gi%C3%A1%20n%C3%B4ng%20s%E1%BA%A3n%20h%C3%B4m%20nay%2015%2F01%2F2025 - https://ttpglobal.com.vn/cap-nhat-gia-nong-san-hom-nay-15-01-2025/" data-action="share/whatsapp/share" class="icon primary button round tooltip whatsapp show-for-medium" title="Share on WhatsApp" aria-label="Share on WhatsApp"><i class="icon-whatsapp"></i></a><a href="https://www.facebook.com/sharer.php?u=https://ttpglobal.com.vn/cap-nhat-gia-nong-san-hom-nay-15-01-2025/" data-label="Facebook" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;" rel="noopener noreferrer nofollow" target="_blank" class="icon primary button round tooltip facebook" title="Share on Facebook" aria-label="Share on Facebook"><i class="icon-facebook" ></i></a><a href="https://twitter.com/share?url=https://ttpglobal.com.vn/cap-nhat-gia-nong-san-hom-nay-15-01-2025/" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;" rel="noopener noreferrer nofollow" target="_blank" class="icon primary button round tooltip twitter" title="Share on Twitter" aria-label="Share on Twitter"><i class="icon-twitter" ></i></a><a href="mailto:enteryour@addresshere.com?subject=C%E1%BA%ADp%20nh%E1%BA%ADt%20gi%C3%A1%20n%C3%B4ng%20s%E1%BA%A3n%20h%C3%B4m%20nay%2015%2F01%2F2025&amp;body=Check%20this%20out:%20https://ttpglobal.com.vn/cap-nhat-gia-nong-san-hom-nay-15-01-2025/" rel="nofollow" class="icon primary button round tooltip email" title="Email to a Friend" aria-label="Email to a Friend"><i class="icon-envelop" ></i></a><a href="https://pinterest.com/pin/create/button/?url=https://ttpglobal.com.vn/cap-nhat-gia-nong-san-hom-nay-15-01-2025/&amp;media=https://ttpglobal.com.vn/wp-content/uploads/2025/01/NGAY-16122024-25.jpg&amp;description=C%E1%BA%ADp%20nh%E1%BA%ADt%20gi%C3%A1%20n%C3%B4ng%20s%E1%BA%A3n%20h%C3%B4m%20nay%2015%2F01%2F2025" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;" rel="noopener noreferrer nofollow" target="_blank" class="icon primary button round tooltip pinterest" title="Pin on Pinterest" aria-label="Pin on Pinterest"><i class="icon-pinterest" ></i></a><a href="https://www.linkedin.com/shareArticle?mini=true&url=https://ttpglobal.com.vn/cap-nhat-gia-nong-san-hom-nay-15-01-2025/&title=C%E1%BA%ADp%20nh%E1%BA%ADt%20gi%C3%A1%20n%C3%B4ng%20s%E1%BA%A3n%20h%C3%B4m%20nay%2015%2F01%2F2025" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;"  rel="noopener noreferrer nofollow" target="_blank" class="icon primary button round tooltip linkedin" title="Share on LinkedIn" aria-label="Share on LinkedIn"><i class="icon-linkedin" ></i></a></div></div></div>
+
+	<footer class="entry-meta text-left">
+		This entry was posted in <a href="https://ttpglobal.com.vn/tin-tuc/thi-truong/" rel="category tag">Giá cả thị trường</a>. Bookmark the <a href="https://ttpglobal.com.vn/cap-nhat-gia-nong-san-hom-nay-15-01-2025/" title="Permalink to Cập nhật giá nông sản hôm nay 15/01/2025" rel="bookmark">permalink</a>.	</footer>
+
+	<div class="entry-author author-box">
+		<div class="flex-row align-top">
+			<div class="flex-col mr circle">
+				<div class="blog-author-image">
+					<img alt='' src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2090%2090'%3E%3C/svg%3E" data-lazy-srcset='https://secure.gravatar.com/avatar/655b6370ba1946b1feea4e8a0a3bb66b?s=180&#038;d=mm&#038;r=g 2x' class='avatar avatar-90 photo' height='90' width='90' decoding='async' data-lazy-src="https://secure.gravatar.com/avatar/655b6370ba1946b1feea4e8a0a3bb66b?s=90&#038;d=mm&#038;r=g"/><noscript><img alt='' src='https://secure.gravatar.com/avatar/655b6370ba1946b1feea4e8a0a3bb66b?s=90&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/655b6370ba1946b1feea4e8a0a3bb66b?s=180&#038;d=mm&#038;r=g 2x' class='avatar avatar-90 photo' height='90' width='90' decoding='async'/></noscript>				</div>
+			</div>
+			<div class="flex-col flex-grow">
+				<h5 class="author-name uppercase pt-half">
+					diem.trinh@nhigia.vn				</h5>
+				<p class="author-desc small"></p>
+			</div>
+		</div>
+	</div>
+
+        <nav role="navigation" id="nav-below" class="navigation-post">
+	<div class="flex-row next-prev-nav bt bb">
+		<div class="flex-col flex-grow nav-prev text-left">
+			    <div class="nav-previous"><a href="https://ttpglobal.com.vn/benh-tren-cay-ot/" rel="prev"><span class="hide-for-small"><i class="icon-angle-left" ></i></span> Các bệnh trên cây ớt thường gặp và cách phòng trị</a></div>
+		</div>
+		<div class="flex-col flex-grow nav-next text-right">
+			    <div class="nav-next"><a href="https://ttpglobal.com.vn/truoc-khi-bon-phan-huu-co-can-phai-lam-gi/" rel="next">Trước khi bón phân hữu cơ cần phải làm gì? <span class="hide-for-small"><i class="icon-angle-right" ></i></span></a></div>		</div>
+	</div>
+
+	    </nav>
+
+    	</div>
+</article>
+
+
+
+
+<div id="comments" class="comments-area">
+
+	
+	
+	
+	
+</div>
+	</div>
+
+</div>
+
+</div>
+
+
+</main>
+
+<footer id="footer" class="footer-wrapper">
+
+		<section class="section footermoi" id="section_1412980415">
+		<div class="bg section-bg fill bg-fill  " >
+
+			
+			<div class="section-bg-overlay absolute fill"></div>
+			
+
+		</div>
+
+		
+
+		<div class="section-content relative">
+			
+
+<div class="row row-small"  id="row-1799161591">
+
+
+	<div id="col-706949124" class="col medium-5 small-12 large-5"  >
+				<div class="col-inner text-center"  >
+			
+			
+
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1868609951">
+								<div class="img-inner image-cover dark" style="padding-top:100%;">
+			<img width="300" height="300" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" class="attachment-large size-large" alt="" decoding="async" data-lazy-srcset="https://ttpglobal.com.vn/wp-content/uploads/2025/02/Untitled-3.png 300w, https://ttpglobal.com.vn/wp-content/uploads/2025/02/Untitled-3-100x100.png 100w, https://ttpglobal.com.vn/wp-content/uploads/2025/02/Untitled-3-50x50.png 50w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://ttpglobal.com.vn/wp-content/uploads/2025/02/Untitled-3.png" /><noscript><img width="300" height="300" src="https://ttpglobal.com.vn/wp-content/uploads/2025/02/Untitled-3.png" class="attachment-large size-large" alt="" decoding="async" srcset="https://ttpglobal.com.vn/wp-content/uploads/2025/02/Untitled-3.png 300w, https://ttpglobal.com.vn/wp-content/uploads/2025/02/Untitled-3-100x100.png 100w, https://ttpglobal.com.vn/wp-content/uploads/2025/02/Untitled-3-50x50.png 50w" sizes="(max-width: 300px) 100vw, 300px" /></noscript>						
+					</div>
+								
+<style>
+#image_1868609951 {
+  width: 50%;
+}
+</style>
+	</div>
+	
+
+	<div id="text-1914237447" class="text">
+		
+
+<p><strong>Công ty Cổ phần đầu tư TTP GLOBAL</strong> - đơn vị chuyên nhập khẩu Phân Bón Hữu Cơ Cao Cấp từ Mỹ như HGS Bioscience, Humic Growth và phân phối chính thức tại thị trường Việt Nam và khu vực Đông Nam Á.</p>
+<p><strong>Mã số doanh nghiệp:</strong> 0315811643 do Sở Kế hoạch &amp; Đầu tư TP Hồ Chí Minh cấp lần đầu ngày 25/07/2019</p>
+		
+<style>
+#text-1914237447 {
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+}
+#text-1914237447 > * {
+  color: rgb(255, 255, 255);
+}
+</style>
+	</div>
+	
+
+
+		</div>
+					</div>
+
+	
+
+	<div id="col-1519231166" class="col medium-7 small-12 large-7"  >
+				<div class="col-inner"  >
+			
+			
+
+<div class="row"  id="row-550997434">
+
+
+	<div id="col-342847341" class="col medium-6 small-6 large-6"  >
+				<div class="col-inner text-left"  >
+			
+			
+
+	<div id="text-1372851371" class="text">
+		
+
+<h5>CHÍNH SÁCH</h5>
+		
+<style>
+#text-1372851371 {
+  color: rgb(255, 255, 255);
+}
+#text-1372851371 > * {
+  color: rgb(255, 255, 255);
+}
+</style>
+	</div>
+	
+<div class="is-divider divider clearfix" style="max-width:40px;background-color:rgb(255, 255, 255);"></div>
+
+	<div id="text-1593518031" class="text color-footer">
+		
+
+<p><strong><a href="https://ttpglobal.com.vn/chinh-sach-quy-dinh-chung/">CHÍNH SÁCH &amp; QUY ĐỊNH CHUNG</a></strong></p>
+<p><strong><a href="https://ttpglobal.com.vn/quy-dinh-va-hinh-thuc-thanh-toan/">QUY ĐỊNH VÀ HÌNH THỨC THANH TOÁN</a></strong></p>
+<p><strong><a href="https://ttpglobal.com.vn/chinh-sach-bao-mat-thong-tin/">CHÍNH SÁCH BẢO MẬT THÔNG TIN</a></strong></p>
+<p><strong><a href="https://ttpglobal.com.vn/chinh-sach-van-chuyen-giao-nhan/">CHÍNH SÁCH VẬN CHUYỂN, GIAO NHẬN</a></strong></p>
+<p><strong><a href="https://ttpglobal.com.vn/chinh-sach-tra-hang-hoan-tien/">CHÍNH SÁCH TRẢ HÀNG - HOÀN TIỀN</a></strong></p>
+<p><a href="https://ttpglobal.com.vn/chinh-sach-kiem-hang/"><strong>CHÍNH SÁCH KIỂM HÀNG</strong></a></p>
+		
+<style>
+#text-1593518031 {
+  font-size: 0.9rem;
+  color: rgb(255,255,255);
+}
+#text-1593518031 > * {
+  color: rgb(255,255,255);
+}
+</style>
+	</div>
+	
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_506803566">
+		<a class="" href="http://online.gov.vn/Home/WebDetails/112277" target="_blank" rel="noopener noreferrer" >						<div class="img-inner dark" >
+			<img width="600" height="227" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20600%20227'%3E%3C/svg%3E" class="attachment-large size-large" alt="" decoding="async" data-lazy-src="https://ttpglobal.com.vn/wp-content/uploads/2024/01/logoSaleNoti.png" /><noscript><img width="600" height="227" src="https://ttpglobal.com.vn/wp-content/uploads/2024/01/logoSaleNoti.png" class="attachment-large size-large" alt="" decoding="async" /></noscript>						
+					</div>
+						</a>		
+<style>
+#image_506803566 {
+  width: 68%;
+}
+</style>
+	</div>
+	
+
+
+		</div>
+					</div>
+
+	
+
+	<div id="col-828552903" class="col medium-6 small-12 large-6"  >
+				<div class="col-inner"  >
+			
+			
+
+	<div id="text-3679278385" class="text">
+		
+
+<h5>LIÊN HỆ</h5>
+		
+<style>
+#text-3679278385 {
+  color: rgb(255, 255, 255);
+}
+#text-3679278385 > * {
+  color: rgb(255, 255, 255);
+}
+</style>
+	</div>
+	
+<div class="is-divider divider clearfix" style="max-width:40px;background-color:rgb(255, 255, 255);"></div>
+
+<div class="row row-collapse"  id="row-478308708">
+
+
+	<div id="col-1724261254" class="col medium-2 small-2 large-2"  >
+				<div class="col-inner"  >
+			
+			
+
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1760464350">
+								<div class="img-inner dark" >
+			<img width="100" height="100" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3C/svg%3E" class="attachment-large size-large" alt="" decoding="async" data-lazy-src="https://ttpglobal.com.vn/wp-content/uploads/2023/05/2-1.png" /><noscript><img width="100" height="100" src="https://ttpglobal.com.vn/wp-content/uploads/2023/05/2-1.png" class="attachment-large size-large" alt="" decoding="async" /></noscript>						
+					</div>
+								
+<style>
+#image_1760464350 {
+  width: 60%;
+}
+</style>
+	</div>
+	
+
+
+		</div>
+					</div>
+
+	
+
+	<div id="col-328612553" class="col medium-10 small-6 large-8"  >
+				<div class="col-inner"  >
+			
+			
+
+	<div id="text-278263613" class="text">
+		
+
+<p>Số 186-188 Nguyễn Duy, P.Hưng Phú, Q.8, TP.Hồ Chí Minh</p>
+
+		
+<style>
+#text-278263613 {
+  font-size: 0.9rem;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+#text-278263613 > * {
+  color: rgb(255, 255, 255);
+}
+</style>
+	</div>
+	
+
+		</div>
+					</div>
+
+	
+
+
+<style>
+#row-478308708 > .col > .col-inner {
+  padding: 0 0px 0px 0px;
+}
+</style>
+</div>
+<div class="row row-collapse"  id="row-1856365054">
+
+
+	<div id="col-319847173" class="col medium-2 small-2 large-2"  >
+				<div class="col-inner"  >
+			
+			
+
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1471539518">
+								<div class="img-inner dark" >
+			<img width="100" height="100" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3C/svg%3E" class="attachment-large size-large" alt="" decoding="async" data-lazy-src="https://ttpglobal.com.vn/wp-content/uploads/2023/05/4-1.png" /><noscript><img width="100" height="100" src="https://ttpglobal.com.vn/wp-content/uploads/2023/05/4-1.png" class="attachment-large size-large" alt="" decoding="async" /></noscript>						
+					</div>
+								
+<style>
+#image_1471539518 {
+  width: 60%;
+}
+</style>
+	</div>
+	
+
+
+		</div>
+					</div>
+
+	
+
+	<div id="col-913156747" class="col medium-8 small-10 large-8"  >
+				<div class="col-inner"  >
+			
+			
+
+	<div id="text-1956845792" class="text">
+		
+
+<p>0938.432.788</p>
+		
+<style>
+#text-1956845792 {
+  font-size: 0.9rem;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+#text-1956845792 > * {
+  color: rgb(255, 255, 255);
+}
+</style>
+	</div>
+	
+
+		</div>
+					</div>
+
+	
+
+</div>
+<div class="row row-collapse"  id="row-1213242311">
+
+
+	<div id="col-1068946814" class="col medium-2 small-2 large-2"  >
+				<div class="col-inner"  >
+			
+			
+
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_773018141">
+								<div class="img-inner dark" >
+			<img width="100" height="100" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3C/svg%3E" class="attachment-large size-large" alt="" decoding="async" data-lazy-src="https://ttpglobal.com.vn/wp-content/uploads/2023/05/3-1.png" /><noscript><img width="100" height="100" src="https://ttpglobal.com.vn/wp-content/uploads/2023/05/3-1.png" class="attachment-large size-large" alt="" decoding="async" /></noscript>						
+					</div>
+								
+<style>
+#image_773018141 {
+  width: 60%;
+}
+</style>
+	</div>
+	
+
+
+		</div>
+					</div>
+
+	
+
+	<div id="col-1290466710" class="col medium-8 small-10 large-8"  >
+				<div class="col-inner"  >
+			
+			
+
+	<div id="text-2940848835" class="text">
+		
+
+<p>info@ttpglobal.com.vn</p>
+		
+<style>
+#text-2940848835 {
+  font-size: 0.9rem;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+#text-2940848835 > * {
+  color: rgb(255, 255, 255);
+}
+</style>
+	</div>
+	
+
+		</div>
+					</div>
+
+	
+
+</div>
+<div class="row row-collapse"  id="row-2004769411">
+
+
+	<div id="col-1314585604" class="col medium-2 small-2 large-2"  >
+				<div class="col-inner"  >
+			
+			
+
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_2047909240">
+								<div class="img-inner dark" >
+			<img width="100" height="100" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3C/svg%3E" class="attachment-large size-large" alt="" decoding="async" data-lazy-src="https://ttpglobal.com.vn/wp-content/uploads/2023/05/1-1.png" /><noscript><img width="100" height="100" src="https://ttpglobal.com.vn/wp-content/uploads/2023/05/1-1.png" class="attachment-large size-large" alt="" decoding="async" /></noscript>						
+					</div>
+								
+<style>
+#image_2047909240 {
+  width: 60%;
+}
+</style>
+	</div>
+	
+
+
+		</div>
+					</div>
+
+	
+
+	<div id="col-1591292408" class="col medium-8 small-10 large-8"  >
+				<div class="col-inner"  >
+			
+			
+
+	<div id="text-3275238162" class="text">
+		
+
+<p>www.ttpglobal.com.vn</p>
+		
+<style>
+#text-3275238162 {
+  font-size: 0.9rem;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+#text-3275238162 > * {
+  color: rgb(255, 255, 255);
+}
+</style>
+	</div>
+	
+
+		</div>
+					</div>
+
+	
+
+</div>
+<div class="social-icons follow-icons" ><a href="https://www.facebook.com/TTPGLOBAL.COM.VN" target="_blank" data-label="Facebook" rel="noopener noreferrer nofollow" class="icon primary button circle facebook tooltip" title="Follow on Facebook" aria-label="Follow on Facebook"><i class="icon-facebook" ></i></a><a href="https://www.youtube.com/@TTPGLOBALJSC" target="_blank" rel="noopener noreferrer nofollow" data-label="YouTube" class="icon primary button circle  youtube tooltip" title="Follow on YouTube" aria-label="Follow on YouTube"><i class="icon-youtube" ></i></a></div>
+
+	<div id="text-763988473" class="text">
+		
+
+<h5>CHỨNG NHẬN &amp; BẢN QUYỀN</h5>
+		
+<style>
+#text-763988473 {
+  color: rgb(255, 255, 255);
+}
+#text-763988473 > * {
+  color: rgb(255, 255, 255);
+}
+</style>
+	</div>
+	
+	<div id="text-3111995371" class="text">
+		
+
+<p><a href="//www.dmca.com/Protection/Status.aspx?ID=5ccd2146-c34e-41db-91de-2189aed4388e" target="_blank" title="DMCA.com Protection Status" class="dmca-badge" rel="noopener"> <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"  alt="DMCA.com Protection Status" data-lazy-src="https://images.dmca.com/Badges/DMCA_logo-grn-btn150w.png?ID=5ccd2146-c34e-41db-91de-2189aed4388e" /><noscript><img src ="https://images.dmca.com/Badges/DMCA_logo-grn-btn150w.png?ID=5ccd2146-c34e-41db-91de-2189aed4388e"  alt="DMCA.com Protection Status" /></noscript></a>  <script type="rocketlazyloadscript" data-minify="1" src="https://ttpglobal.com.vn/wp-content/cache/min/1/Badges/DMCABadgeHelper.min.js?ver=1739757361" defer> </script></p>
+		
+<style>
+#text-3111995371 {
+  font-size: 0.75rem;
+  text-align: left;
+}
+</style>
+	</div>
+	
+
+		</div>
+					</div>
+
+	
+
+</div>
+
+
+		</div>
+					</div>
+
+	
+
+</div>
+
+		</div>
+
+		
+<style>
+#section_1412980415 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  min-height: 435px;
+  background-color: rgb(35, 15, 8);
+}
+#section_1412980415 .section-bg-overlay {
+  background-color: rgba(22, 22, 22, 0.5);
+}
+#section_1412980415 .section-bg.bg-loaded {
+  background-image: url(https://ttpglobal.com.vn/wp-content/uploads/2022/10/bg-footer-1.jpg);
+}
+#section_1412980415 .section-bg {
+  background-position: 0% 0%;
+}
+#section_1412980415 .ux-shape-divider--top svg {
+  height: 150px;
+  --divider-top-width: 100%;
+}
+#section_1412980415 .ux-shape-divider--bottom svg {
+  height: 150px;
+  --divider-width: 100%;
+}
+</style>
+	</section>
+	
+<div class="absolute-footer dark medium-text-center small-text-center">
+  <div class="container clearfix">
+
+          <div class="footer-secondary pull-right">
+                <div class="payment-icons inline-block"><div class="payment-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 64 32">
+<path d="M10.781 7.688c-0.251-1.283-1.219-1.688-2.344-1.688h-8.376l-0.061 0.405c5.749 1.469 10.469 4.595 12.595 10.501l-1.813-9.219zM13.125 19.688l-0.531-2.781c-1.096-2.907-3.752-5.594-6.752-6.813l4.219 15.939h5.469l8.157-20.032h-5.501l-5.062 13.688zM27.72 26.061l3.248-20.061h-5.187l-3.251 20.061h5.189zM41.875 5.656c-5.125 0-8.717 2.72-8.749 6.624-0.032 2.877 2.563 4.469 4.531 5.439 2.032 0.968 2.688 1.624 2.688 2.499 0 1.344-1.624 1.939-3.093 1.939-2.093 0-3.219-0.251-4.875-1.032l-0.688-0.344-0.719 4.499c1.219 0.563 3.437 1.064 5.781 1.064 5.437 0.032 8.97-2.688 9.032-6.843 0-2.282-1.405-4-4.376-5.439-1.811-0.904-2.904-1.563-2.904-2.499 0-0.843 0.936-1.72 2.968-1.72 1.688-0.029 2.936 0.314 3.875 0.752l0.469 0.248 0.717-4.344c-1.032-0.406-2.656-0.844-4.656-0.844zM55.813 6c-1.251 0-2.189 0.376-2.72 1.688l-7.688 18.374h5.437c0.877-2.467 1.096-3 1.096-3 0.592 0 5.875 0 6.624 0 0 0 0.157 0.688 0.624 3h4.813l-4.187-20.061h-4zM53.405 18.938c0 0 0.437-1.157 2.064-5.594-0.032 0.032 0.437-1.157 0.688-1.907l0.374 1.72c0.968 4.781 1.189 5.781 1.189 5.781-0.813 0-3.283 0-4.315 0z"></path>
+</svg>
+</div><div class="payment-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 64 32">
+<path d="M35.255 12.078h-2.396c-0.229 0-0.444 0.114-0.572 0.303l-3.306 4.868-1.4-4.678c-0.088-0.292-0.358-0.493-0.663-0.493h-2.355c-0.284 0-0.485 0.28-0.393 0.548l2.638 7.745-2.481 3.501c-0.195 0.275 0.002 0.655 0.339 0.655h2.394c0.227 0 0.439-0.111 0.569-0.297l7.968-11.501c0.191-0.275-0.006-0.652-0.341-0.652zM19.237 16.718c-0.23 1.362-1.311 2.276-2.691 2.276-0.691 0-1.245-0.223-1.601-0.644-0.353-0.417-0.485-1.012-0.374-1.674 0.214-1.35 1.313-2.294 2.671-2.294 0.677 0 1.227 0.225 1.589 0.65 0.365 0.428 0.509 1.027 0.404 1.686zM22.559 12.078h-2.384c-0.204 0-0.378 0.148-0.41 0.351l-0.104 0.666-0.166-0.241c-0.517-0.749-1.667-1-2.817-1-2.634 0-4.883 1.996-5.321 4.796-0.228 1.396 0.095 2.731 0.888 3.662 0.727 0.856 1.765 1.212 3.002 1.212 2.123 0 3.3-1.363 3.3-1.363l-0.106 0.662c-0.040 0.252 0.155 0.479 0.41 0.479h2.147c0.341 0 0.63-0.247 0.684-0.584l1.289-8.161c0.040-0.251-0.155-0.479-0.41-0.479zM8.254 12.135c-0.272 1.787-1.636 1.787-2.957 1.787h-0.751l0.527-3.336c0.031-0.202 0.205-0.35 0.41-0.35h0.345c0.899 0 1.747 0 2.185 0.511 0.262 0.307 0.341 0.761 0.242 1.388zM7.68 7.473h-4.979c-0.341 0-0.63 0.248-0.684 0.584l-2.013 12.765c-0.040 0.252 0.155 0.479 0.41 0.479h2.378c0.34 0 0.63-0.248 0.683-0.584l0.543-3.444c0.053-0.337 0.343-0.584 0.683-0.584h1.575c3.279 0 5.172-1.587 5.666-4.732 0.223-1.375 0.009-2.456-0.635-3.212-0.707-0.832-1.962-1.272-3.628-1.272zM60.876 7.823l-2.043 12.998c-0.040 0.252 0.155 0.479 0.41 0.479h2.055c0.34 0 0.63-0.248 0.683-0.584l2.015-12.765c0.040-0.252-0.155-0.479-0.41-0.479h-2.299c-0.205 0.001-0.379 0.148-0.41 0.351zM54.744 16.718c-0.23 1.362-1.311 2.276-2.691 2.276-0.691 0-1.245-0.223-1.601-0.644-0.353-0.417-0.485-1.012-0.374-1.674 0.214-1.35 1.313-2.294 2.671-2.294 0.677 0 1.227 0.225 1.589 0.65 0.365 0.428 0.509 1.027 0.404 1.686zM58.066 12.078h-2.384c-0.204 0-0.378 0.148-0.41 0.351l-0.104 0.666-0.167-0.241c-0.516-0.749-1.667-1-2.816-1-2.634 0-4.883 1.996-5.321 4.796-0.228 1.396 0.095 2.731 0.888 3.662 0.727 0.856 1.765 1.212 3.002 1.212 2.123 0 3.3-1.363 3.3-1.363l-0.106 0.662c-0.040 0.252 0.155 0.479 0.41 0.479h2.147c0.341 0 0.63-0.247 0.684-0.584l1.289-8.161c0.040-0.252-0.156-0.479-0.41-0.479zM43.761 12.135c-0.272 1.787-1.636 1.787-2.957 1.787h-0.751l0.527-3.336c0.031-0.202 0.205-0.35 0.41-0.35h0.345c0.899 0 1.747 0 2.185 0.511 0.261 0.307 0.34 0.761 0.241 1.388zM43.187 7.473h-4.979c-0.341 0-0.63 0.248-0.684 0.584l-2.013 12.765c-0.040 0.252 0.156 0.479 0.41 0.479h2.554c0.238 0 0.441-0.173 0.478-0.408l0.572-3.619c0.053-0.337 0.343-0.584 0.683-0.584h1.575c3.279 0 5.172-1.587 5.666-4.732 0.223-1.375 0.009-2.456-0.635-3.212-0.707-0.832-1.962-1.272-3.627-1.272z"></path>
+</svg>
+</div><div class="payment-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 64 32">
+<path d="M7.114 14.656c-1.375-0.5-2.125-0.906-2.125-1.531 0-0.531 0.437-0.812 1.188-0.812 1.437 0 2.875 0.531 3.875 1.031l0.563-3.5c-0.781-0.375-2.406-1-4.656-1-1.594 0-2.906 0.406-3.844 1.188-1 0.812-1.5 2-1.5 3.406 0 2.563 1.563 3.688 4.125 4.594 1.625 0.594 2.188 1 2.188 1.656 0 0.625-0.531 0.969-1.5 0.969-1.188 0-3.156-0.594-4.437-1.343l-0.563 3.531c1.094 0.625 3.125 1.281 5.25 1.281 1.688 0 3.063-0.406 4.031-1.157 1.063-0.843 1.594-2.062 1.594-3.656-0.001-2.625-1.595-3.719-4.188-4.657zM21.114 9.125h-3v-4.219l-4.031 0.656-0.563 3.563-1.437 0.25-0.531 3.219h1.937v6.844c0 1.781 0.469 3 1.375 3.75 0.781 0.625 1.907 0.938 3.469 0.938 1.219 0 1.937-0.219 2.468-0.344v-3.688c-0.282 0.063-0.938 0.22-1.375 0.22-0.906 0-1.313-0.5-1.313-1.563v-6.156h2.406l0.595-3.469zM30.396 9.031c-0.313-0.062-0.594-0.093-0.876-0.093-1.312 0-2.374 0.687-2.781 1.937l-0.313-1.75h-4.093v14.719h4.687v-9.563c0.594-0.719 1.437-0.968 2.563-0.968 0.25 0 0.5 0 0.812 0.062v-4.344zM33.895 2.719c-1.375 0-2.468 1.094-2.468 2.469s1.094 2.5 2.468 2.5 2.469-1.124 2.469-2.5-1.094-2.469-2.469-2.469zM36.239 23.844v-14.719h-4.687v14.719h4.687zM49.583 10.468c-0.843-1.094-2-1.625-3.469-1.625-1.343 0-2.531 0.563-3.656 1.75l-0.25-1.469h-4.125v20.155l4.688-0.781v-4.719c0.719 0.219 1.469 0.344 2.125 0.344 1.157 0 2.876-0.313 4.188-1.75 1.281-1.375 1.907-3.5 1.907-6.313 0-2.499-0.469-4.405-1.407-5.593zM45.677 19.532c-0.375 0.687-0.969 1.094-1.625 1.094-0.468 0-0.906-0.093-1.281-0.281v-7c0.812-0.844 1.531-0.938 1.781-0.938 1.188 0 1.781 1.313 1.781 3.812 0.001 1.437-0.219 2.531-0.656 3.313zM62.927 10.843c-1.032-1.312-2.563-2-4.501-2-4 0-6.468 2.938-6.468 7.688 0 2.625 0.656 4.625 1.968 5.875 1.157 1.157 2.844 1.719 5.032 1.719 2 0 3.844-0.469 5-1.251l-0.501-3.219c-1.157 0.625-2.5 0.969-4 0.969-0.906 0-1.532-0.188-1.969-0.594-0.5-0.406-0.781-1.094-0.875-2.062h7.75c0.031-0.219 0.062-1.281 0.062-1.625 0.001-2.344-0.5-4.188-1.499-5.5zM56.583 15.094c0.125-2.093 0.687-3.062 1.75-3.062s1.625 1 1.687 3.062h-3.437z"></path>
+</svg>
+</div><div class="payment-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 64 32">
+<path d="M42.667-0c-4.099 0-7.836 1.543-10.667 4.077-2.831-2.534-6.568-4.077-10.667-4.077-8.836 0-16 7.163-16 16s7.164 16 16 16c4.099 0 7.835-1.543 10.667-4.077 2.831 2.534 6.568 4.077 10.667 4.077 8.837 0 16-7.163 16-16s-7.163-16-16-16zM11.934 19.828l0.924-5.809-2.112 5.809h-1.188v-5.809l-1.056 5.809h-1.584l1.32-7.657h2.376v4.753l1.716-4.753h2.508l-1.32 7.657h-1.585zM19.327 18.244c-0.088 0.528-0.178 0.924-0.264 1.188v0.396h-1.32v-0.66c-0.353 0.528-0.924 0.792-1.716 0.792-0.442 0-0.792-0.132-1.056-0.396-0.264-0.351-0.396-0.792-0.396-1.32 0-0.792 0.218-1.364 0.66-1.716 0.614-0.44 1.364-0.66 2.244-0.66h0.66v-0.396c0-0.351-0.353-0.528-1.056-0.528-0.442 0-1.012 0.088-1.716 0.264 0.086-0.351 0.175-0.792 0.264-1.32 0.703-0.264 1.32-0.396 1.848-0.396 1.496 0 2.244 0.616 2.244 1.848 0 0.353-0.046 0.749-0.132 1.188-0.089 0.616-0.179 1.188-0.264 1.716zM24.079 15.076c-0.264-0.086-0.66-0.132-1.188-0.132s-0.792 0.177-0.792 0.528c0 0.177 0.044 0.31 0.132 0.396l0.528 0.264c0.792 0.442 1.188 1.012 1.188 1.716 0 1.409-0.838 2.112-2.508 2.112-0.792 0-1.366-0.044-1.716-0.132 0.086-0.351 0.175-0.836 0.264-1.452 0.703 0.177 1.188 0.264 1.452 0.264 0.614 0 0.924-0.175 0.924-0.528 0-0.175-0.046-0.308-0.132-0.396-0.178-0.175-0.396-0.308-0.66-0.396-0.792-0.351-1.188-0.924-1.188-1.716 0-1.407 0.792-2.112 2.376-2.112 0.792 0 1.32 0.045 1.584 0.132l-0.265 1.451zM27.512 15.208h-0.924c0 0.442-0.046 0.838-0.132 1.188 0 0.088-0.022 0.264-0.066 0.528-0.046 0.264-0.112 0.442-0.198 0.528v0.528c0 0.353 0.175 0.528 0.528 0.528 0.175 0 0.35-0.044 0.528-0.132l-0.264 1.452c-0.264 0.088-0.66 0.132-1.188 0.132-0.881 0-1.32-0.44-1.32-1.32 0-0.528 0.086-1.099 0.264-1.716l0.66-4.225h1.584l-0.132 0.924h0.792l-0.132 1.585zM32.66 17.32h-3.3c0 0.442 0.086 0.749 0.264 0.924 0.264 0.264 0.66 0.396 1.188 0.396s1.1-0.175 1.716-0.528l-0.264 1.584c-0.442 0.177-1.012 0.264-1.716 0.264-1.848 0-2.772-0.924-2.772-2.773 0-1.142 0.264-2.024 0.792-2.64 0.528-0.703 1.188-1.056 1.98-1.056 0.703 0 1.274 0.22 1.716 0.66 0.35 0.353 0.528 0.881 0.528 1.584 0.001 0.617-0.046 1.145-0.132 1.585zM35.3 16.132c-0.264 0.97-0.484 2.201-0.66 3.697h-1.716l0.132-0.396c0.35-2.463 0.614-4.4 0.792-5.809h1.584l-0.132 0.924c0.264-0.44 0.528-0.703 0.792-0.792 0.264-0.264 0.528-0.308 0.792-0.132-0.088 0.088-0.31 0.706-0.66 1.848-0.353-0.086-0.661 0.132-0.925 0.66zM41.241 19.697c-0.353 0.177-0.838 0.264-1.452 0.264-0.881 0-1.584-0.308-2.112-0.924-0.528-0.528-0.792-1.32-0.792-2.376 0-1.32 0.35-2.42 1.056-3.3 0.614-0.879 1.496-1.32 2.64-1.32 0.44 0 1.056 0.132 1.848 0.396l-0.264 1.584c-0.528-0.264-1.012-0.396-1.452-0.396-0.707 0-1.235 0.264-1.584 0.792-0.353 0.442-0.528 1.144-0.528 2.112 0 0.616 0.132 1.056 0.396 1.32 0.264 0.353 0.614 0.528 1.056 0.528 0.44 0 0.924-0.132 1.452-0.396l-0.264 1.717zM47.115 15.868c-0.046 0.264-0.066 0.484-0.066 0.66-0.088 0.442-0.178 1.035-0.264 1.782-0.088 0.749-0.178 1.254-0.264 1.518h-1.32v-0.66c-0.353 0.528-0.924 0.792-1.716 0.792-0.442 0-0.792-0.132-1.056-0.396-0.264-0.351-0.396-0.792-0.396-1.32 0-0.792 0.218-1.364 0.66-1.716 0.614-0.44 1.32-0.66 2.112-0.66h0.66c0.086-0.086 0.132-0.218 0.132-0.396 0-0.351-0.353-0.528-1.056-0.528-0.442 0-1.012 0.088-1.716 0.264 0-0.351 0.086-0.792 0.264-1.32 0.703-0.264 1.32-0.396 1.848-0.396 1.496 0 2.245 0.616 2.245 1.848 0.001 0.089-0.021 0.264-0.065 0.529zM49.69 16.132c-0.178 0.528-0.396 1.762-0.66 3.697h-1.716l0.132-0.396c0.35-1.935 0.614-3.872 0.792-5.809h1.584c0 0.353-0.046 0.66-0.132 0.924 0.264-0.44 0.528-0.703 0.792-0.792 0.35-0.175 0.614-0.218 0.792-0.132-0.353 0.442-0.574 1.056-0.66 1.848-0.353-0.086-0.66 0.132-0.925 0.66zM54.178 19.828l0.132-0.528c-0.353 0.442-0.838 0.66-1.452 0.66-0.707 0-1.188-0.218-1.452-0.66-0.442-0.614-0.66-1.232-0.66-1.848 0-1.142 0.308-2.067 0.924-2.773 0.44-0.703 1.056-1.056 1.848-1.056 0.528 0 1.056 0.264 1.584 0.792l0.264-2.244h1.716l-1.32 7.657h-1.585zM16.159 17.98c0 0.442 0.175 0.66 0.528 0.66 0.35 0 0.614-0.132 0.792-0.396 0.264-0.264 0.396-0.66 0.396-1.188h-0.397c-0.881 0-1.32 0.31-1.32 0.924zM31.076 15.076c-0.088 0-0.178-0.043-0.264-0.132h-0.264c-0.528 0-0.881 0.353-1.056 1.056h1.848v-0.396l-0.132-0.264c-0.001-0.086-0.047-0.175-0.133-0.264zM43.617 17.98c0 0.442 0.175 0.66 0.528 0.66 0.35 0 0.614-0.132 0.792-0.396 0.264-0.264 0.396-0.66 0.396-1.188h-0.396c-0.881 0-1.32 0.31-1.32 0.924zM53.782 15.076c-0.353 0-0.66 0.22-0.924 0.66-0.178 0.264-0.264 0.749-0.264 1.452 0 0.792 0.264 1.188 0.792 1.188 0.35 0 0.66-0.175 0.924-0.528 0.264-0.351 0.396-0.879 0.396-1.584-0.001-0.792-0.311-1.188-0.925-1.188z"></path>
+</svg>
+</div><div class="payment-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 64 32">
+<path d="M13.043 8.356c-0.46 0-0.873 0.138-1.24 0.413s-0.662 0.681-0.885 1.217c-0.223 0.536-0.334 1.112-0.334 1.727 0 0.568 0.119 0.99 0.358 1.265s0.619 0.413 1.141 0.413c0.508 0 1.096-0.131 1.765-0.393v1.327c-0.693 0.262-1.389 0.393-2.089 0.393-0.884 0-1.572-0.254-2.063-0.763s-0.736-1.229-0.736-2.161c0-0.892 0.181-1.712 0.543-2.462s0.846-1.32 1.452-1.709 1.302-0.584 2.089-0.584c0.435 0 0.822 0.038 1.159 0.115s0.7 0.217 1.086 0.421l-0.616 1.276c-0.369-0.201-0.673-0.333-0.914-0.398s-0.478-0.097-0.715-0.097zM19.524 12.842h-2.47l-0.898 1.776h-1.671l3.999-7.491h1.948l0.767 7.491h-1.551l-0.125-1.776zM19.446 11.515l-0.136-1.786c-0.035-0.445-0.052-0.876-0.052-1.291v-0.184c-0.153 0.408-0.343 0.84-0.569 1.296l-0.982 1.965h1.739zM27.049 12.413c0 0.711-0.257 1.273-0.773 1.686s-1.213 0.62-2.094 0.62c-0.769 0-1.389-0.153-1.859-0.46v-1.398c0.672 0.367 1.295 0.551 1.869 0.551 0.39 0 0.694-0.072 0.914-0.217s0.329-0.343 0.329-0.595c0-0.147-0.024-0.275-0.070-0.385s-0.114-0.214-0.201-0.309c-0.087-0.095-0.303-0.269-0.648-0.52-0.481-0.337-0.818-0.67-1.013-1s-0.293-0.685-0.293-1.066c0-0.439 0.108-0.831 0.324-1.176s0.523-0.614 0.922-0.806 0.857-0.288 1.376-0.288c0.755 0 1.446 0.168 2.073 0.505l-0.569 1.189c-0.543-0.252-1.044-0.378-1.504-0.378-0.289 0-0.525 0.077-0.71 0.23s-0.276 0.355-0.276 0.607c0 0.207 0.058 0.389 0.172 0.543s0.372 0.36 0.773 0.615c0.421 0.272 0.736 0.572 0.945 0.9s0.313 0.712 0.313 1.151zM33.969 14.618h-1.597l0.7-3.22h-2.46l-0.7 3.22h-1.592l1.613-7.46h1.597l-0.632 2.924h2.459l0.632-2.924h1.592l-1.613 7.46zM46.319 9.831c0 0.963-0.172 1.824-0.517 2.585s-0.816 1.334-1.415 1.722c-0.598 0.388-1.288 0.582-2.067 0.582-0.891 0-1.587-0.251-2.086-0.753s-0.749-1.198-0.749-2.090c0-0.902 0.172-1.731 0.517-2.488s0.82-1.338 1.425-1.743c0.605-0.405 1.306-0.607 2.099-0.607 0.888 0 1.575 0.245 2.063 0.735s0.73 1.176 0.73 2.056zM43.395 8.356c-0.421 0-0.808 0.155-1.159 0.467s-0.627 0.739-0.828 1.283-0.3 1.135-0.3 1.771c0 0.5 0.116 0.877 0.348 1.133s0.558 0.383 0.979 0.383 0.805-0.148 1.151-0.444c0.346-0.296 0.617-0.714 0.812-1.255s0.292-1.148 0.292-1.822c0-0.483-0.113-0.856-0.339-1.12-0.227-0.264-0.546-0.396-0.957-0.396zM53.427 14.618h-1.786l-1.859-5.644h-0.031l-0.021 0.163c-0.111 0.735-0.227 1.391-0.344 1.97l-0.757 3.511h-1.436l1.613-7.46h1.864l1.775 5.496h0.021c0.042-0.259 0.109-0.628 0.203-1.107s0.407-1.942 0.94-4.388h1.43l-1.613 7.461zM13.296 20.185c0 0.98-0.177 1.832-0.532 2.556s-0.868 1.274-1.539 1.652c-0.672 0.379-1.464 0.568-2.376 0.568h-2.449l1.678-7.68h2.15c0.977 0 1.733 0.25 2.267 0.751s0.801 1.219 0.801 2.154zM8.925 23.615c0.536 0 1.003-0.133 1.401-0.399s0.71-0.657 0.934-1.174c0.225-0.517 0.337-1.108 0.337-1.773 0-0.54-0.131-0.95-0.394-1.232s-0.64-0.423-1.132-0.423h-0.624l-1.097 5.001h0.575zM18.64 24.96h-4.436l1.678-7.68h4.442l-0.293 1.334h-2.78l-0.364 1.686h2.59l-0.299 1.334h-2.59l-0.435 1.98h2.78l-0.293 1.345zM20.509 24.96l1.678-7.68h1.661l-1.39 6.335h2.78l-0.294 1.345h-4.436zM26.547 24.96l1.694-7.68h1.656l-1.694 7.68h-1.656zM33.021 23.389c0.282-0.774 0.481-1.27 0.597-1.487l2.346-4.623h1.716l-4.061 7.68h-1.814l-0.689-7.68h1.602l0.277 4.623c0.015 0.157 0.022 0.39 0.022 0.699-0.007 0.361-0.018 0.623-0.033 0.788h0.038zM41.678 24.96h-4.437l1.678-7.68h4.442l-0.293 1.334h-2.78l-0.364 1.686h2.59l-0.299 1.334h-2.59l-0.435 1.98h2.78l-0.293 1.345zM45.849 22.013l-0.646 2.947h-1.656l1.678-7.68h1.949c0.858 0 1.502 0.179 1.933 0.536s0.646 0.881 0.646 1.571c0 0.554-0.15 1.029-0.451 1.426s-0.733 0.692-1.298 0.885l1.417 3.263h-1.803l-1.124-2.947h-0.646zM46.137 20.689h0.424c0.474 0 0.843-0.1 1.108-0.3s0.396-0.504 0.396-0.914c0-0.287-0.086-0.502-0.258-0.646s-0.442-0.216-0.812-0.216h-0.402l-0.456 2.076zM53.712 20.39l2.031-3.11h1.857l-3.355 4.744-0.646 2.936h-1.645l0.646-2.936-1.281-4.744h1.694l0.7 3.11z"></path>
+</svg>
+</div></div>      </div>
+    
+    <div class="footer-primary pull-left">
+            <div class="copyright-footer">
+        <!--Start of Tawk.to Script-->
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/67b553c08496cf190b73b22f/1ike4uaee';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->      </div>
+          </div>
+  </div>
+</div>
+
+</footer>
+
+</div>
+
+<div id="main-menu" class="mobile-sidebar no-scrollbar mfp-hide">
+
+	
+	<div class="sidebar-menu no-scrollbar ">
+
+		
+					<ul class="nav nav-sidebar nav-vertical nav-uppercase" data-tab="1">
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-3697"><a href="https://ttpglobal.com.vn/">TRANG CHỦ</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-6877"><a href="https://ttpglobal.com.vn/danh-muc/phan-bon-huu-co/">PHÂN BÓN HỮU CƠ</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-368"><a href="https://ttpglobal.com.vn/kien-thuc-nha-nong/">KIẾN THỨC NHÀ NÔNG</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-has-children menu-item-4765"><a href="https://ttpglobal.com.vn/tin-tuc/">TIN TỨC</a>
+<ul class="sub-menu nav-sidebar-ul children">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-4773"><a href="https://ttpglobal.com.vn/tin-tuc/thi-truong/">Giá cả thị trường</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9338"><a href="https://ttpglobal.com.vn/tin-tuc/huu-co-cho-nong-san-viet/">Hũu cơ cho nông sản Việt</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9144"><a href="https://ttpglobal.com.vn/tin-tuc/su-kien/">Sự kiện</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-351"><a href="https://ttpglobal.com.vn/gioi-thieu-ttp-global/">GIỚI THIỆU</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-6925"><a href="https://ttpglobal.com.vn/chieu-mo-dai-ly-phan-huu-co-my-cao-cap/">ỨNG TUYỂN ĐẠI LÝ</a></li>
+			</ul>
+		
+		
+	</div>
+
+	
+</div>
+<div id="pum-5185" class="pum pum-overlay pum-theme-5162 pum-theme-ngtangnangsuat popmake-overlay auto_open click_open" data-popmake="{&quot;id&quot;:5185,&quot;slug&quot;:&quot;dang-ki-tu-van&quot;,&quot;theme_id&quot;:5162,&quot;cookies&quot;:[{&quot;event&quot;:&quot;on_popup_close&quot;,&quot;settings&quot;:{&quot;name&quot;:&quot;pum-5185&quot;,&quot;key&quot;:&quot;&quot;,&quot;session&quot;:false,&quot;path&quot;:&quot;1&quot;,&quot;time&quot;:&quot;1 month&quot;}}],&quot;triggers&quot;:[{&quot;type&quot;:&quot;auto_open&quot;,&quot;settings&quot;:{&quot;cookie_name&quot;:[&quot;pum-5185&quot;],&quot;delay&quot;:&quot;5000&quot;}},{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;extra_selectors&quot;:&quot;&quot;,&quot;cookie_name&quot;:null}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;stackable&quot;:false,&quot;overlay_disabled&quot;:false,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;medium&quot;,&quot;responsive_min_width&quot;:&quot;0%&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width&quot;:&quot;100%&quot;,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;640px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:false,&quot;location&quot;:&quot;center&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_bottom&quot;:&quot;0&quot;,&quot;position_right&quot;:&quot;0&quot;,&quot;position_fixed&quot;:false,&quot;animation_type&quot;:&quot;fade&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;center top&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:false,&quot;esc_press&quot;:false,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}" role="dialog" aria-hidden="true" >
+
+	<div id="popmake-5185" class="pum-container popmake theme-5162 pum-responsive pum-responsive-medium responsive size-medium">
+
+				
+
+				
+
+		
+
+				<div class="pum-content popmake-content" tabindex="0">
+			<p><div id="row_wraper" class="vc_row wpb_row vc_row-fluid row_wraper"><div class="col_left wpb_column vc_column_container vc_col-sm-12" id="col_left"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="row_header" class="vc_row wpb_row vc_inner vc_row-fluid vc_row-o-content-top vc_row-flex"><div class="wpb_column vc_column_container vc_col-sm-12" id="col_right"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_raw_code wpb_content_element wpb_raw_html" >
+		<div class="wpb_wrapper">
+			<div class="header-">
+<ul id="ul_header">
+<li>
+<img width="75" height="115" alt="TTP Global" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2075%20115'%3E%3C/svg%3E" data-lazy-src="https://ttpglobal.com.vn/wp-content/uploads/2024/04/logottp2024.png" /><noscript><img width="75" height="115" alt="TTP Global" src="https://ttpglobal.com.vn/wp-content/uploads/2024/04/logottp2024.png" /></noscript>
+</li>
+<li>
+<p id="tieudecongty"><strong>CÔNG TY CỔ PHẦN ĐẦU TƯ</strong></p>
+<p id="tencongty"><img width="337" height="45"  alt="Công ty cổ phần đầu tư TTP Global"  src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20337%2045'%3E%3C/svg%3E" data-lazy-src="https://ttpglobal.com.vn/wp-content/uploads/2024/04/ttbgloabl.png" /><noscript><img width="337" height="45"  alt="Công ty cổ phần đầu tư TTP Global"  src="https://ttpglobal.com.vn/wp-content/uploads/2024/04/ttbgloabl.png" /></noscript></p>
+
+</li>
+</ul>
+
+</div>
+		</div>
+	</div>
+
+	<div class="wpb_text_column wpb_content_element " >
+		<div class="wpb_wrapper">
+			
+		</div>
+	</div>
+</div></div></div></div><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12" id="col_tieude"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_raw_code wpb_content_element wpb_raw_html text_css" id="text_css">
+		<div class="wpb_wrapper">
+			<style>
+.header- {
+    margin-left: 155px;
+}
+
+#noidung1 {
+    margin-left: 115px;
+}
+
+ul#ul_header {
+color:#000;
+margin-left: 0px;
+padding-left: 0px;
+align-items: stretch;
+    list-style: none;
+    display: flex;
+}
+ul#ul_header li
+{
+padding-left:10px;
+}
+#col_left .vc_column_container > .vc_column-inner {
+    margin-to-p: -18px;
+   padding-right: 0px!important;
+ }
+#col_left .vc_column_container
+{
+ width: unset!important;
+}
+div#col_left {
+    margin-top: -37px;
+}
+div#col_right .vc_column_container {
+    width: unset;
+}
+.wpb_button, .wpb_content_element, ul.wpb_thumbnails-fluid>li {
+    margin-bottom: 0px;
+}
+#popmake-5185.pum-container {
+padding-bottom:0px;
+    margin-top: 0px !important;
+    margin-bottom: 0px! important;
+}
+div#col_tieude {
+    height: 2px;
+}
+@media screen and (max-width: 768px) {
+.header- {
+    margin-left: 0px;
+}
+
+#noidung1 {
+    margin-left: 0px;
+}
+
+div#contenpopup{
+ margin-top: -10px;
+}
+div#col_left_logo img {
+display: none;
+    margin-top: -60%;
+    margin-left: 70%;
+    left: -14px;
+    text-align: center;
+    width: 100px;
+}
+div#col_left_logo {
+    left: 20%;
+    margin: 0 auto;
+    width: 15px;
+    top: -350px;
+    position: absolute;
+    margin-top: 0px;
+    text-align: center;
+    /* display: none; */
+}
+
+p#noidung2{
+text-align: justify;
+margin-top: -30px;
+padding-bottom: 10px;
+}
+p#noidung1
+{
+padding-bottom: 30px;
+line-height: 25px;
+font-size: 15px;
+
+}
+#text_css {
+    display: none;
+}
+p#tieudecongty
+{
+padding-bottom:0px;
+font-size: 0.9em;
+}
+div#col_left {
+    dis-play: none;
+}
+div#-col_left_logo {
+    display: none;
+}
+}
+#evf-5161 input {
+    background: #FFF;
+    height:30px;
+margin-bottom:0px;
+}
+
+#evf-5185 ::placeholder {
+    background: #fff;
+    padding-left: 10px;
+    color: #000 !important;
+}
+div#popmake-5185 {
+background: hsla(0, 0%, 100%, 1);
+
+background: radial-gradient(circle, hsla(0, 0%, 100%, 1) 1%, hsla(0, 0%, 80%, 1) 49%, hsla(0, 0%, 60%, 1) 100%);
+
+background: -moz-radial-gradient(circle, hsla(0, 0%, 100%, 1) 1%, hsla(0, 0%, 80%, 1) 49%, hsla(0, 0%, 60%, 1) 100%);
+
+background: -webkit-radial-gradient(circle, hsla(0, 0%, 100%, 1) 1%, hsla(0, 0%, 80%, 1) 49%, hsla(0, 0%, 60%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#CCCCCC", GradientType=1 );
+}
+div#col_right {
+   margin:0 auto;
+}
+div#logo_diamon {
+position: absolute;
+width:140px;
+    margin-top:0px;
+    margin-left: -115px;
+    
+   }
+div#popmake-5185 {
+    border-radius: 50px;
+}
+button#evf-submit-5161 {
+    font-size: 15px;
+ background: #336633;
+  background-image: -webkit-linear-gradient(right, #336633, #009933);
+  background-image: -moz-linear-gradient(right, #336633, #009933);
+  background-image: -ms-linear-gradient(right, #336633, #009933);
+  background-image: -o-linear-gradient(right, #336633, #009933);
+  background-image: linear-gradient(to left, #336633, #009933);
+
+    font-weight: bold;
+    color: #FFF;
+    width:150px;
+    border-radius: 20px;
+}
+
+#tencongty {
+   margin-top:-15px;  
+    text-align: left;
+}
+
+#tieudecongty {
+margin-top:10px;
+    font-weight: bold;
+    font-size:22px;
+    color: #000;
+}
+
+
+p#tencongty img {
+    width:80%;
+}
+
+div#div_tencty {
+    font-weight: bold;
+    width: 80%;
+    /* background: red; */
+    font-size: 26px;
+    marg-in-left: -75px;
+    color: #000;
+}
+
+form#evf-form-5161 .evf-submit-container {
+  text-align: center;
+text-align:-webkit-center;
+}
+div#contenpopup {
+    line-height: 32px;
+}
+#noidung2 {
+text-align: justify;
+    line-height: 20px;
+    padding-bottom: 0px;
+    font-size: 16px;
+    color: #000;
+}
+#noidung1 {
+margin-top: 0px;
+margin-bottom: 0px;
+margin--left: -75px;
+    opacity: 1;
+    text-align: center;
+    color: #005500;
+line-height:25px;
+    font-size:23px;
+    font-weight: bold;
+}
+.header- img{
+padding-left:10px;
+
+}
+.header- {
+margin-top:18px;
+   
+}
+</style>
+		</div>
+	</div>
+</div></div></div></div><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div></div></div></div></div></div><div id="row_tangnangsuat" class="vc_row wpb_row vc_row-fluid row_tangnangsuat"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-2"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_empty_space"   style="height: 10px"><span class="vc_empty_space_inner"></span></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-10"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element " >
+		<div class="wpb_wrapper">
+			<div id="contenpopup">
+<p id="noidung1">Bạn Có Muốn Tăng <span style="color: #ff0000;"><strong>20 &#8211; 25%</strong></span> Năng Suất Và Giảm<strong><span style="color: #ff0000;"> 50 &#8211; 70%</span></strong> NPK Không?</p>
+</div>
+
+		</div>
+	</div>
+</div></div></div></div></div></div></div></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="row_quytrinh" class="vc_row wpb_row vc_inner vc_row-fluid"><div class="col_left_logo wpb_column vc_column_container vc_col-sm-4" id="col_left_logo"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_raw_code wpb_content_element wpb_raw_html" >
+		<div class="wpb_wrapper">
+			<div id="logo_diamon">
+<img width="242" height="212" alt="Diamond Grow" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20242%20212'%3E%3C/svg%3E" data-lazy-src="https://ttpglobal.com.vn/wp-content/uploads/2024/04/logo_diamon.png"/><noscript><img width="242" height="212" alt="Diamond Grow" src="https://ttpglobal.com.vn/wp-content/uploads/2024/04/logo_diamon.png"/></noscript>
+</div>
+
+		</div>
+	</div>
+<div class="vc_empty_space  emtyspace_left" id="emtyspace_left"  style="height: 32px"><span class="vc_empty_space_inner"></span></div>
+	<div class="wpb_raw_code wpb_content_element wpb_raw_html" >
+		<div class="wpb_wrapper">
+			<img width="595" height="413" alt="sản phẩm humic"  src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20595%20413'%3E%3C/svg%3E" data-lazy-src="https://ttpglobal.com.vn/wp-content/uploads/2024/04/hinh-humic.png"><noscript><img width="595" height="413" alt="sản phẩm humic"  src="https://ttpglobal.com.vn/wp-content/uploads/2024/04/hinh-humic.png"></noscript>
+		</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-8"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element " >
+		<div class="wpb_wrapper">
+			<p id="noidung2">Điền thông tin bên dưới để nhận quy trình bón phân hữu cơ độc quyền của chúng tôi:</p>
+<div class="everest-forms"><div class="evf-container default" id="evf-5161"><form id="evf-form-5161" class="everest-form" data-formid="5161" data-ajax_submission="1" data-keyboard_friendly_form="0" method="post" enctype="multipart/form-data" action="/cap-nhat-gia-nong-san-hom-nay-15-01-2025/"><div class="evf-field-container"><input type="hidden" id="_wpnonce5161" name="_wpnonce5161" value="d3accdd7cc" /><input type="hidden" name="_wp_http_referer" value="/cap-nhat-gia-nong-san-hom-nay-15-01-2025/" /><div class="evf-frontend-row" data-row="row_1" conditional_rules="[]"><div class="evf-frontend-grid evf-grid-2" data-grid="grid_1"><div id="evf-5161-field_xYOXpmBX1L-1-container" class="evf-field evf-field-text form-row validate-required" data-required-field-message="This field is required." data-field-id="xYOXpmBX1L-1"><label class="evf-field-label evf-label-hide" for="evf-5161-field_xYOXpmBX1L-1"><span class="evf-label">Tên khách</span> <abbr class="required" title="Required">*</abbr></label><input type="text" id="evf-5161-field_xYOXpmBX1L-1" class="input-text" name="everest_forms[form_fields][xYOXpmBX1L-1]" placeholder="Tên khách" required></div></div><div class="evf-frontend-grid evf-grid-2" data-grid="grid_2"><div id="evf-5161-field_MDsaZwfUPa-2-container" class="evf-field evf-field-text form-row validate-required" data-required-field-message="This field is required." data-field-id="MDsaZwfUPa-2"><label class="evf-field-label evf-label-hide" for="evf-5161-field_MDsaZwfUPa-2"><span class="evf-label">Điện thoại</span> <abbr class="required" title="Required">*</abbr></label><input type="text" id="evf-5161-field_MDsaZwfUPa-2" class="input-text everest-forms-limit-characters-enabled everest-forms-min-characters-length-enabled" data-form-id="5161" data-field-id="MDsaZwfUPa-2" data-text-limit="11" data-text-min-length="10" name="everest_forms[form_fields][MDsaZwfUPa-2]" placeholder="Điện thoại" maxlength="11" minlength="10" required></div></div></div><div class="evf-frontend-row" data-row="row_2" conditional_rules="[]"><div class="evf-frontend-grid evf-grid-1" data-grid="grid_1"><div id="evf-5161-field_eOIw2fC5eR-3-container" class="evf-field evf-field-text form-row" data-field-id="eOIw2fC5eR-3"><label class="evf-field-label evf-label-hide" for="evf-5161-field_eOIw2fC5eR-3"><span class="evf-label">Địa chỉ</span> </label><input type="text" id="evf-5161-field_eOIw2fC5eR-3" class="input-text" name="everest_forms[form_fields][eOIw2fC5eR-3]" placeholder="Địa chỉ" ></div></div></div><div class="evf-frontend-row" data-row="row_3" conditional_rules="[]"><div class="evf-frontend-grid evf-grid-2" data-grid="grid_1"><div id="evf-5161-field_YQ2NXjT1Af-4-container" class="evf-field evf-field-text form-row" data-field-id="YQ2NXjT1Af-4"><label class="evf-field-label evf-label-hide" for="evf-5161-field_YQ2NXjT1Af-4"><span class="evf-label">Loại cây</span> </label><input type="text" id="evf-5161-field_YQ2NXjT1Af-4" class="input-text" name="everest_forms[form_fields][YQ2NXjT1Af-4]" placeholder="Loại cây" ></div></div><div class="evf-frontend-grid evf-grid-2" data-grid="grid_2"><div id="evf-5161-field_Lp556HJdeE-5-container" class="evf-field evf-field-text form-row validate-required" data-required-field-message="This field is required." data-field-id="Lp556HJdeE-5"><label class="evf-field-label evf-label-hide" for="evf-5161-field_Lp556HJdeE-5"><span class="evf-label">Diện tích</span> <abbr class="required" title="Required">*</abbr></label><input type="text" id="evf-5161-field_Lp556HJdeE-5" class="input-text everest-forms-limit-words-enabled" data-form-id="5161" data-field-id="Lp556HJdeE-5" data-text-limit="50" name="everest_forms[form_fields][Lp556HJdeE-5]" placeholder="Diện tích" required></div></div></div><div class="evf-frontend-row" data-row="row_4" conditional_rules="[]"><div class="evf-frontend-grid evf-grid-1" data-grid="grid_1"></div></div></div><div class="evf-honeypot-container evf-field-hp"><label for="evf-5161-field-hp" class="evf-field-label">Message</label><input type="text" name="everest_forms[hp]" id="evf-5161-field-hp" class="input-text"></div><div class="evf-submit-container " ><input type="hidden" name="everest_forms[id]" value="5161"><input type="hidden" name="everest_forms[author]" value="0"><input type="hidden" name="everest_forms[post_id]" value="8903"><button type='submit' name='everest_forms[submit]' class='everest-forms-submit-button button evf-submit ' id='evf-submit-5161' value='evf-submit' data-process-text="Processing…" conditional_rules='&quot;&quot;' conditional_id='evf-submit-5161'  id="evf-submit-5161" aria-live="assertive">Đăng ký</button></div></form></div><!-- .evf-container --></div>
+
+		</div>
+	</div>
+</div></div></div></div></div></div></div></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div><div class="wpb_column vc_column_container vc_col-sm-9"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div></div></div></div></div></div></p>
+		</div>
+
+
+				
+
+				            <button type="button" class="pum-close popmake-close" aria-label="Close">
+			X            </button>
+		
+	</div>
+
+</div>
+<div id="pum-2696" class="pum pum-overlay pum-theme-2698 pum-theme-ng popmake-overlay click_open" data-popmake="{&quot;id&quot;:2696,&quot;slug&quot;:&quot;dang-ky-mua-hang&quot;,&quot;theme_id&quot;:2698,&quot;cookies&quot;:[],&quot;triggers&quot;:[{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;extra_selectors&quot;:&quot;&quot;,&quot;cookie_name&quot;:null}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;stackable&quot;:false,&quot;overlay_disabled&quot;:false,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;medium&quot;,&quot;responsive_min_width&quot;:&quot;0%&quot;,&quot;responsive_min_width_unit&quot;:false,&quot;responsive_max_width&quot;:&quot;100%&quot;,&quot;responsive_max_width_unit&quot;:false,&quot;custom_width&quot;:&quot;640px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:false,&quot;location&quot;:&quot;center&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_bottom&quot;:&quot;0&quot;,&quot;position_right&quot;:&quot;0&quot;,&quot;position_fixed&quot;:false,&quot;animation_type&quot;:&quot;fade&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;center top&quot;,&quot;overlay_zindex&quot;:false,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:false,&quot;esc_press&quot;:false,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}" role="dialog" aria-hidden="true" aria-labelledby="pum_popup_title_2696">
+
+	<div id="popmake-2696" class="pum-container popmake theme-2698 pum-responsive pum-responsive-medium responsive size-medium">
+
+				
+
+				            <div id="pum_popup_title_2696" class="pum-title popmake-title">
+				Đăng Ký Mua Hàng			</div>
+		
+
+		
+
+				<div class="pum-content popmake-content" tabindex="0">
+			<div class="everest-forms"><div class="evf-container default" id="evf-2695"><form id="evf-form-2695" class="everest-form" data-formid="2695" data-ajax_submission="1" data-keyboard_friendly_form="0" method="post" enctype="multipart/form-data" action="/cap-nhat-gia-nong-san-hom-nay-15-01-2025/"><div class="evf-field-container"><input type="hidden" id="_wpnonce2695" name="_wpnonce2695" value="d3accdd7cc" /><input type="hidden" name="_wp_http_referer" value="/cap-nhat-gia-nong-san-hom-nay-15-01-2025/" /><div class="evf-frontend-row" data-row="row_1" conditional_rules="[]"><div class="evf-frontend-grid evf-grid-1" data-grid="grid_1"><div id="evf-2695-field_fullname-container" class="evf-field evf-field-text form-row validate-required" data-required-field-message="This field is required." data-field-id="fullname"><label class="evf-field-label" for="evf-2695-field_fullname"><span class="evf-label">Tên</span> <abbr class="required" title="Required">*</abbr></label><input type="text" id="evf-2695-field_fullname" class="input-text" name="everest_forms[form_fields][fullname]" required></div><div id="evf-2695-field_subject-container" class="evf-field evf-field-text form-row validate-required" data-required-field-message="This field is required." data-field-id="subject"><label class="evf-field-label" for="evf-2695-field_subject"><span class="evf-label">Số điện thoại</span> <abbr class="required" title="Required">*</abbr></label><input type="text" id="evf-2695-field_subject" class="input-text everest-forms-limit-characters-enabled everest-forms-min-characters-length-enabled" data-form-id="2695" data-field-id="subject" data-text-limit="11" data-text-min-length="10" name="everest_forms[form_fields][subject]" maxlength="11" minlength="10" required></div><div id="evf-2695-field_7FcGR2sZjM-1-container" class="evf-field evf-field-text form-row" data-field-id="7FcGR2sZjM-1"><label class="evf-field-label" for="evf-2695-field_7FcGR2sZjM-1"><span class="evf-label">Địa chỉ:</span> </label><input type="text" id="evf-2695-field_7FcGR2sZjM-1" class="input-text" name="everest_forms[form_fields][7FcGR2sZjM-1]" ></div><div id="evf-2695-field_message-container" class="evf-field evf-field-textarea form-row validate-required" data-required-field-message="This field is required." data-field-id="message"><label class="evf-field-label" for="evf-2695-field_message"><span class="evf-label">Nội dung</span> <abbr class="required" title="Required">*</abbr></label><textarea id="evf-2695-field_message" class="input-text" name="everest_forms[form_fields][message]" required ></textarea></div></div></div></div><div class="evf-honeypot-container evf-field-hp"><label for="evf-2695-field-hp" class="evf-field-label">Email</label><input type="text" name="everest_forms[hp]" id="evf-2695-field-hp" class="input-text"></div><div class="evf-submit-container " ><input type="hidden" name="everest_forms[id]" value="2695"><input type="hidden" name="everest_forms[author]" value="0"><input type="hidden" name="everest_forms[post_id]" value="8903"><button type='submit' name='everest_forms[submit]' class='everest-forms-submit-button button evf-submit ' id='evf-submit-2695' value='evf-submit' data-process-text="Processing…" conditional_rules='&quot;&quot;' conditional_id='evf-submit-2695'  id="evf-submit-2695" aria-live="assertive">Mua Hàng</button></div></form></div><!-- .evf-container --></div>
+		</div>
+
+
+				
+
+				            <button type="button" class="pum-close popmake-close" aria-label="Close">
+			X            </button>
+		
+	</div>
+
+</div>
+    <div id="login-form-popup" class="lightbox-content mfp-hide">
+            <div class="woocommerce-notices-wrapper"></div>
+<div class="account-container lightbox-inner">
+
+	
+			<div class="account-login-inner">
+
+				<h3 class="uppercase">Đăng nhập</h3>
+
+				<form class="woocommerce-form woocommerce-form-login login" method="post">
+
+					
+					<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+						<label for="username">Tên tài khoản hoặc địa chỉ email&nbsp;<span class="required">*</span></label>
+						<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" autocomplete="username" value="" />					</p>
+					<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+						<label for="password">Mật khẩu&nbsp;<span class="required">*</span></label>
+						<input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password" autocomplete="current-password" />
+					</p>
+
+					
+					<p class="form-row">
+						<label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
+							<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span>Ghi nhớ mật khẩu</span>
+						</label>
+						<input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="dd95fbf78d" /><input type="hidden" name="_wp_http_referer" value="/cap-nhat-gia-nong-san-hom-nay-15-01-2025/" />						<button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="Đăng nhập">Đăng nhập</button>
+					</p>
+					<p class="woocommerce-LostPassword lost_password">
+						<a href="https://ttpglobal.com.vn/my-account/lost-password/">Quên mật khẩu?</a>
+					</p>
+
+					
+				</form>
+			</div>
+
+			
+</div>
+
+          </div>
+          <!--[if lte IE 9]>
+        <script>
+            'use strict';
+            (function($) {
+                $(document).ready(function() {
+                    $('#ftwp-container').addClass('ftwp-ie9');
+                });
+            })(jQuery);
+        </script>
+        <![endif]-->
+			<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+		var c = document.body.className;
+		c = c.replace( /everest-forms-no-js/, 'everest-forms-js' );
+		document.body.className = c;
+	</script>
+		<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<script type='text/javascript' id='kk-star-ratings-js-extra'>
+/* <![CDATA[ */
+var kk_star_ratings = {"action":"kk-star-ratings","endpoint":"https:\/\/ttpglobal.com.vn\/wp-admin\/admin-ajax.php","nonce":"cb3ad354fa"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-content/plugins/kk-star-ratings/src/core/public/js/kk-star-ratings.min.js?ver=5.2.9' id='kk-star-ratings-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.6.4.1' id='js-cookie-js' defer></script>
+<script type='text/javascript' id='woocommerce-js-extra'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=6.4.1' id='woocommerce-js' defer></script>
+<script type='text/javascript' id='wc-cart-fragments-js-extra'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_7347a1ce29733545b4f2768d9a844644","fragment_name":"wc_fragments_7347a1ce29733545b4f2768d9a844644","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=6.4.1' id='wc-cart-fragments-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-includes/js/underscore.min.js?ver=1.13.4' id='underscore-js' defer></script>
+<script type='text/javascript' id='wp-util-js-extra'>
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-includes/js/wp-util.min.js?ver=6.3' id='wp-util-js' defer></script>
+<script type='text/javascript' id='wp-api-request-js-extra'>
+/* <![CDATA[ */
+var wpApiSettings = {"root":"https:\/\/ttpglobal.com.vn\/wp-json\/","nonce":"0d5433fcd0","versionString":"wp\/v2\/"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-includes/js/api-request.min.js?ver=6.3' id='wp-api-request-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2' id='wp-polyfill-inert-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.11' id='regenerator-runtime-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1' id='wp-hooks-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef' id='wp-i18n-js'></script>
+<script type="rocketlazyloadscript" id="wp-i18n-js-after" data-rocket-type="text/javascript">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-includes/js/dist/url.min.js?ver=8814d23f2d64864d280d' id='wp-url-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='wp-api-fetch-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2023-07-15 15:30:50+0000","generator":"GlotPress\/4.0.0-alpha.4","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"vi_VN"},"You are probably offline.":["C\u00f3 th\u1ec3 b\u1ea1n \u0111ang ngo\u1ea1i tuy\u1ebfn."],"Media upload failed. If this is a photo or a large image, please scale it down and try again.":["T\u1ea3i l\u00ean media kh\u00f4ng th\u00e0nh c\u00f4ng. N\u1ebfu \u0111\u00e2y l\u00e0 h\u00ecnh \u1ea3nh c\u00f3 k\u00edch th\u01b0\u1edbc l\u1edbn, vui l\u00f2ng thu nh\u1ecf n\u00f3 xu\u1ed1ng v\u00e0 th\u1eed l\u1ea1i."],"The response is not a valid JSON response.":["Ph\u1ea3n h\u1ed3i kh\u00f4ng ph\u1ea3i l\u00e0 m\u1ed9t JSON h\u1ee3p l\u1ec7."],"An unknown error occurred.":["C\u00f3 l\u1ed7i n\u00e0o \u0111\u00f3 \u0111\u00e3 x\u1ea3y ra."]}},"comment":{"reference":"wp-includes\/js\/dist\/api-fetch.js"}} );
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-includes/js/dist/api-fetch.min.js?ver=0fa4dabf8bf2c7adf21a' id='wp-api-fetch-js'></script>
+<script type="rocketlazyloadscript" id="wp-api-fetch-js-after" data-rocket-type="text/javascript">
+wp.apiFetch.use( wp.apiFetch.createRootURLMiddleware( "https://ttpglobal.com.vn/wp-json/" ) );
+wp.apiFetch.nonceMiddleware = wp.apiFetch.createNonceMiddleware( "0d5433fcd0" );
+wp.apiFetch.use( wp.apiFetch.nonceMiddleware );
+wp.apiFetch.use( wp.apiFetch.mediaUploadMiddleware );
+wp.apiFetch.nonceEndpoint = "https://ttpglobal.com.vn/wp-admin/admin-ajax.php?action=rest-nonce";
+</script>
+<script type='text/javascript' id='woo-variation-swatches-js-extra'>
+/* <![CDATA[ */
+var woo_variation_swatches_options = {"show_variation_label":"1","clear_on_reselect":"","variation_label_separator":":","is_mobile":"","show_variation_stock":"","stock_label_threshold":"5","cart_redirect_after_add":"no","enable_ajax_add_to_cart":"yes","cart_url":"https:\/\/ttpglobal.com.vn\/cart-2\/","is_cart":""};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-content/plugins/woo-variation-swatches/assets/js/frontend.min.js?ver=1721201711' id='woo-variation-swatches-js' defer></script>
+<script type="rocketlazyloadscript" id="rocket-browser-checker-js-after" data-rocket-type="text/javascript">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script type='text/javascript' id='rocket-preload-links-js-extra'>
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/checkout\/|\/cart-2\/|\/my-account\/|\/wc-api\/v(.*)|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wp-admin\/|\/logout\/|\/wp-login.php|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/ttpglobal.com.vn","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" id="rocket-preload-links-js-after" data-rocket-type="text/javascript">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type='text/javascript' id='wpcbn-frontend-js-extra'>
+/* <![CDATA[ */
+var wpcbn_vars = {"nonce":"1e795fc597","ajax_url":"https:\/\/ttpglobal.com.vn\/wp-admin\/admin-ajax.php","instant_checkout":"","perfect_scrollbar":"1","wc_checkout_js":"https:\/\/ttpglobal.com.vn\/wp-content\/plugins\/woocommerce\/assets\/js\/frontend\/checkout.js"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-content/cache/min/1/wp-content/plugins/wpc-buy-now-button/assets/js/frontend.js?ver=1739757361' id='wpcbn-frontend-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-includes/js/hoverIntent.min.js?ver=1.10.2' id='hoverIntent-js' defer></script>
+<script type='text/javascript' id='flatsome-js-js-extra'>
+/* <![CDATA[ */
+var flatsomeVars = {"theme":{"version":"3.15.3"},"ajaxurl":"https:\/\/ttpglobal.com.vn\/wp-admin\/admin-ajax.php","rtl":"","sticky_height":"80","assets_url":"https:\/\/ttpglobal.com.vn\/wp-content\/themes\/flatsome\/assets\/js\/","lightbox":{"close_markup":"<button title=\"%title%\" type=\"button\" class=\"mfp-close\"><svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"feather feather-x\"><line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"><\/line><line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"><\/line><\/svg><\/button>","close_btn_inside":false},"user":{"can_edit_pages":false},"i18n":{"mainMenu":"Main Menu"},"options":{"cookie_notice_version":"1","swatches_layout":false,"swatches_box_select_event":false,"swatches_box_behavior_selected":false,"swatches_box_update_urls":"1","swatches_box_reset":false,"swatches_box_reset_extent":false,"swatches_box_reset_time":300,"search_result_latency":"0"},"is_mini_cart_reveal":"1"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-content/cache/min/1/wp-content/themes/flatsome/assets/js/flatsome.js?ver=1739757361' id='flatsome-js-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-content/cache/min/1/wp-content/themes/flatsome/inc/integrations/wp-rocket/flatsome-wp-rocket.js?ver=1739757361' id='flatsome-wp-rocket-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-content/cache/min/1/wp-content/themes/flatsome/inc/extensions/flatsome-live-search/flatsome-live-search.js?ver=1739757361' id='flatsome-live-search-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=6.2.0' id='wpb_composer_front_js-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-content/plugins/everest-forms/assets/js/inputmask/jquery.inputmask.bundle.min.js?ver=4.0.0-beta.58' id='inputmask-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-content/plugins/everest-forms/assets/js/jquery-validate/jquery.validate.min.js?ver=1.19.2' id='jquery-validate-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-content/plugins/everest-forms/assets/js/intlTelInput/jquery.intlTelInput.min.js?ver=16.0.7' id='jquery-intl-tel-input-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-content/plugins/everest-forms/assets/js/selectWoo/selectWoo.full.min.js?ver=1.0.8' id='selectWoo-js' defer></script>
+<script type='text/javascript' id='everest-forms-js-extra'>
+/* <![CDATA[ */
+var everest_forms_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","submit":"Submit","disable_user_details":"no","everest_forms_data_save":"d46c963b80","everest_forms_slot_booking":"82c521a117","i18n_messages_required":"This field is required.","i18n_messages_url":"Please enter a valid URL.","i18n_messages_email":"Please enter a valid email address.","i18n_messages_email_suggestion":"Did you mean {suggestion}?","i18n_messages_email_suggestion_title":"Click to accept this suggestion.","i18n_messages_confirm":"Field values do not match.","i18n_messages_check_limit":"You have exceeded number of allowed selections: {#}.","i18n_messages_number":"Please enter a valid number.","i18n_no_matches":"No matches found","mailcheck_enabled":"1","mailcheck_domains":[],"mailcheck_toplevel_domains":["dev"],"il8n_min_word_length_err_msg":"Please enter at least {0} words.","il8n_min_character_length_err_msg":"Please enter at least {0} characters.","plugin_url":"https:\/\/ttpglobal.com.vn\/wp-content\/plugins\/everest-forms\/","i18n_messages_phone":"Please enter a valid phone number.","i18n_field_rating_greater_than_max_value_error":"Please enter in a value less than 100."};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-content/plugins/everest-forms/assets/js/frontend/everest-forms.min.js?ver=3.0.3.1' id='everest-forms-js' defer></script>
+<script type='text/javascript' id='everest-forms-survey-polls-quiz-script-js-extra'>
+/* <![CDATA[ */
+var everest_forms_survey_polls_quiz_script_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","ajax_nonce":"df3d9fdeb3","form_id":""};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-content/plugins/everest-forms/assets/js/frontend/everest-forms-survey-polls-quiz.min.js?ver=3.0.3.1' id='everest-forms-survey-polls-quiz-script-js' defer></script>
+<script type='text/javascript' id='everest-forms-text-limit-js-extra'>
+/* <![CDATA[ */
+var everest_forms_text_limit_params = {"i18n_messages_limit_characters":"{count} of {limit} max characters.","i18n_messages_limit_words":"{count} of {limit} max words."};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-content/plugins/everest-forms/assets/js/frontend/text-limit.min.js?ver=3.0.3.1' id='everest-forms-text-limit-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-content/plugins/everest-forms/assets/js/dropzone/dropzone.min.js?ver=5.5.0' id='dropzone-js' defer></script>
+<script type='text/javascript' id='everest-forms-file-upload-js-extra'>
+/* <![CDATA[ */
+var everest_forms_upload_parms = {"url":"https:\/\/ttpglobal.com.vn\/wp-admin\/admin-ajax.php","errors":{"file_not_uploaded":"This file was not uploaded.","file_limit":"File limit has been reached ({fileLimit}).","file_extension":false,"file_size":"File exceeds max size allowed.","post_max_size":"File exceeds the upload limit allowed (256 MB)."},"max_timeout":"30000","loading_message":"Do not submit the form until the upload process is finished"};
+var everest_forms_upload_parms = {"url":"https:\/\/ttpglobal.com.vn\/wp-admin\/admin-ajax.php","errors":{"file_not_uploaded":"This file was not uploaded.","file_limit":"File limit has been reached ({fileLimit}).","file_extension":false,"file_size":"File exceeds max size allowed.","post_max_size":"File exceeds the upload limit allowed (256 MB)."},"max_timeout":"30000","loading_message":"Do not submit the form until the upload process is finished"};
+var everest_forms_upload_parms = {"url":"https:\/\/ttpglobal.com.vn\/wp-admin\/admin-ajax.php","errors":{"file_not_uploaded":"This file was not uploaded.","file_limit":"File limit has been reached ({fileLimit}).","file_extension":false,"file_size":"File exceeds max size allowed.","post_max_size":"File exceeds the upload limit allowed (256 MB)."},"max_timeout":"30000","loading_message":"Do not submit the form until the upload process is finished"};
+var everest_forms_upload_parms = {"url":"https:\/\/ttpglobal.com.vn\/wp-admin\/admin-ajax.php","errors":{"file_not_uploaded":"This file was not uploaded.","file_limit":"File limit has been reached ({fileLimit}).","file_extension":false,"file_size":"File exceeds max size allowed.","post_max_size":"File exceeds the upload limit allowed (256 MB)."},"max_timeout":"30000","loading_message":"Do not submit the form until the upload process is finished"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-content/plugins/everest-forms/assets/js/frontend/everest-forms-file-upload.min.js?ver=3.0.3.1' id='everest-forms-file-upload-js' defer></script>
+<script type='text/javascript' id='everest-forms-ajax-submission-js-extra'>
+/* <![CDATA[ */
+var everest_forms_ajax_submission_params = {"ajax_url":"https:\/\/ttpglobal.com.vn\/wp-admin\/admin-ajax.php","evf_ajax_submission":"7126843f68","submit":"Submit","error":"Something went wrong while making an AJAX submission","required":"This field is required.","pdf_download":"Click here to download your pdf submission"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-content/plugins/everest-forms/assets/js/frontend/ajax-submission.min.js?ver=3.0.3.1' id='everest-forms-ajax-submission-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2' id='jquery-ui-core-js' defer></script>
+<script type='text/javascript' id='popup-maker-site-js-extra'>
+/* <![CDATA[ */
+var pum_vars = {"version":"1.16.4","pm_dir_url":"https:\/\/ttpglobal.com.vn\/wp-content\/plugins\/popup-maker\/","ajaxurl":"https:\/\/ttpglobal.com.vn\/wp-admin\/admin-ajax.php","restapi":"https:\/\/ttpglobal.com.vn\/wp-json\/pum\/v1","rest_nonce":null,"default_theme":"2686","debug_mode":"","disable_tracking":"","home_url":"\/","message_position":"top","core_sub_forms_enabled":"1","popups":[],"analytics_route":"analytics","analytics_api":"https:\/\/ttpglobal.com.vn\/wp-json\/pum\/v1"};
+var pum_sub_vars = {"ajaxurl":"https:\/\/ttpglobal.com.vn\/wp-admin\/admin-ajax.php","message_position":"top"};
+var pum_popups = {"pum-5185":{"triggers":[{"type":"auto_open","settings":{"cookie_name":["pum-5185"],"delay":"5000"}}],"cookies":[{"event":"on_popup_close","settings":{"name":"pum-5185","key":"","session":false,"path":"1","time":"1 month"}}],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"5162","size":"medium","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":false,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":true,"close_on_form_submission_delay":"0","close_on_overlay_click":false,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"ngtangnangsuat","id":5185,"slug":"dang-ki-tu-van"},"pum-2696":{"triggers":[],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"2698","size":"medium","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":false,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":"0","close_on_overlay_click":false,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"ng","id":2696,"slug":"dang-ky-mua-hang"}};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-content/plugins/popup-maker/assets/js/site.min.js?defer&#038;ver=1.16.4' id='popup-maker-site-js' defer></script>
+<script type='text/javascript' id='fixedtoc-js-js-extra'>
+/* <![CDATA[ */
+var fixedtocOption = {"showAdminbar":"","inOutEffect":"zoom","isNestedList":"1","isColExpList":"1","showColExpIcon":"1","isAccordionList":"","isQuickMin":"1","isEscMin":"1","isEnterMax":"1","fixedMenu":"","scrollOffset":"160","fixedOffsetX":"100","fixedOffsetY":"0","fixedPosition":"middle-right","contentsFixedHeight":"250","inPost":"1","contentsFloatInPost":"none","contentsWidthInPost":"250","contentsHeightInPost":"0","contentsColexpInitMobile":"1","inWidget":"","fixedWidget":"","triggerBorder":"medium","contentsBorder":"medium","triggerSize":"50","isClickableHeader":"","debug":"0","postContentSelector":"#ftwp-postcontent","mobileMaxWidth":"768","disappearPoint":"content-bottom","contentsColexpInit":""};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-content/plugins/fixed-toc/frontend/assets/js/ftoc.min.js?ver=3.1.24' id='fixedtoc-js-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-content/cache/min/1/wp-content/themes/flatsome/assets/js/woocommerce.js?ver=1739757361' id='flatsome-theme-woocommerce-js-js' defer></script>
+<!--[if IE]>
+<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/intersection-observer-polyfill@0.1.0/dist/IntersectionObserver.js?ver=0.1.0' id='intersection-observer-polyfill-js'></script>
+<![endif]-->
+<script type='text/javascript' id='intl-tel-input-js-js-extra'>
+/* <![CDATA[ */
+var mystickyelement_obj = {"plugin_url":"https:\/\/ttpglobal.com.vn\/wp-content\/plugins\/mystickyelements-pro\/"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-content/cache/min/1/wp-content/plugins/mystickyelements-pro/intl-tel-input-src/build/js/intlTelInput.js?ver=1739757361' id='intl-tel-input-js-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-content/cache/min/1/wp-content/plugins/mystickyelements-pro/js/jquery.cookie.js?ver=1739757361' id='mystickyelements-cookie-js-js' defer></script>
+<script type='text/javascript' id='mystickyelements-fronted-js-js-extra'>
+/* <![CDATA[ */
+var mystickyelements = {"ajaxurl":"https:\/\/ttpglobal.com.vn\/wp-admin\/admin-ajax.php","ajax_nonce":"fa37fb94be","google_analytics":""};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://ttpglobal.com.vn/wp-content/plugins/mystickyelements-pro/js/mystickyelements-fronted.min.js?ver=2.0.7' id='mystickyelements-fronted-js-js' defer></script>
+<script type="rocketlazyloadscript" id="gt_widget_script_33069660-js-before" data-rocket-type="text/javascript">
+window.gtranslateSettings = /* document.write */ window.gtranslateSettings || {};window.gtranslateSettings['33069660'] = {"default_language":"vi","languages":["km","lo","vi"],"dropdown_languages":["km","lo","vi"],"url_structure":"none","add_new_line":1,"flag_style":"3d","flag_size":16,"wrapper_selector":"li.menu-item-gtranslate.gt-menu-27616","alt_flags":[],"horizontal_position":"inline","flags_location":"\/wp-content\/plugins\/gtranslate\/flags\/"};
+</script><script type="rocketlazyloadscript" src="https://ttpglobal.com.vn/wp-content/plugins/gtranslate/js/fd.js?ver=6.3" data-no-optimize="1" data-no-minify="1" data-gt-orig-url="/cap-nhat-gia-nong-san-hom-nay-15-01-2025/" data-gt-orig-domain="ttpglobal.com.vn" data-gt-widget-id="33069660" defer></script>						<input type="hidden" class="mystickyelement-country-list-hidden" value="" />
+						<div class="mystickyelements-fixed mystickyelements-fixed-widget-0 mystickyelements-position-screen-center mystickyelements-position-mobile-bottom mystickyelements-on-click mystickyelements-size-medium mystickyelements-mobile-size-large mystickyelements-position-right mystickyelements-templates-default mystickyelements-entry-effect-slide-in"  data-custom-position="" data-custom-position-mobile="" data-mystickyelement-widget="0" data-widget-time-delay="0" id="mystickyelement-widget-0" data-istimedelay="0" >
+							<div class="mystickyelement-lists-wrap">
+								<ul class="mystickyelements-lists mystickyno-minimize"data-mystickyelement-widget="0">
+									
+																				<li id="mystickyelements-social-custom_channel_2"
+												class="mystickyelements-social-icon-li mystickyelements-social-custom_channel_2  element-desktop-on element-mobile-on">
+																								<span class="mystickyelements-social-icon social-custom_channel_2 social-custom" data-tab-setting = 'click' data-tab-setting = 'click'  data-mobile-behavior="disable" data-click = "0" data-flyout="disable"
+													  >
+																											<a href="https://goo.gl/maps/hHhafwfJLHzu5wGQ6"   target="_blank" rel="noopener"  data-url="https://goo.gl/maps/hHhafwfJLHzu5wGQ6" data-tab-setting = 'click' data-mobile-behavior="disable" data-flyout="disable">
+																													<img width="300" height="300" class="" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-lazy-src="https://ttpglobal.com.vn/wp-content/uploads/2023/05/5.png"/><noscript><img width="300" height="300" class="" src="https://ttpglobal.com.vn/wp-content/uploads/2023/05/5.png"/></noscript>
+															<span class='mystickyelements-icon-below-text' style=''>Tìm đường</span>														</a>
+																									</span>
+
+																							<span class="mystickyelements-social-text " style= "" data-flyout="disable">
+																										<a href="https://goo.gl/maps/hHhafwfJLHzu5wGQ6"  target="_blank" rel="noopener"   data-flyout="disable">
+													Custom Link																											</a>
+																								</span>
+											
+											</li>
+
+																					<li id="mystickyelements-social-custom_channel_3"
+												class="mystickyelements-social-icon-li mystickyelements-social-custom_channel_3  element-desktop-on element-mobile-on">
+																								<span class="mystickyelements-social-icon social-custom_channel_3 social-custom" data-tab-setting = 'click' data-tab-setting = 'click'  data-mobile-behavior="disable" data-click = "0" data-flyout="disable"
+													  >
+																											<a href="https://zalo.me/3384720627234193710"   target="_blank" rel="noopener"  data-url="https://zalo.me/3384720627234193710" data-tab-setting = 'click' data-mobile-behavior="disable" data-flyout="disable">
+																													<img width="300" height="300" class="" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-lazy-src="https://ttpglobal.com.vn/wp-content/uploads/2023/05/4.png"/><noscript><img width="300" height="300" class="" src="https://ttpglobal.com.vn/wp-content/uploads/2023/05/4.png"/></noscript>
+															<span class='mystickyelements-icon-below-text' style=''>Chat Zalo</span>														</a>
+																									</span>
+
+																							<span class="mystickyelements-social-text " style= "" data-flyout="disable">
+																										<a href="https://zalo.me/3384720627234193710"  target="_blank" rel="noopener"   data-flyout="disable">
+													Custom Link																											</a>
+																								</span>
+											
+											</li>
+
+																					<li id="mystickyelements-social-custom_channel_4"
+												class="mystickyelements-social-icon-li mystickyelements-social-custom_channel_4  element-desktop-on element-mobile-on">
+																								<span class="mystickyelements-social-icon social-custom_channel_4 social-custom" data-tab-setting = 'click' data-tab-setting = 'click'  data-mobile-behavior="disable" data-click = "0" data-flyout="disable"
+													  >
+																											<a href="tel:0938432788"   target="_blank" rel="noopener"  data-url="tel:0938432788" data-tab-setting = 'click' data-mobile-behavior="disable" data-flyout="disable">
+																													<img width="300" height="300" class="" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-lazy-src="https://ttpglobal.com.vn/wp-content/uploads/2023/05/1.png"/><noscript><img width="300" height="300" class="" src="https://ttpglobal.com.vn/wp-content/uploads/2023/05/1.png"/></noscript>
+															<span class='mystickyelements-icon-below-text' style=''>Gọi điện</span>														</a>
+																									</span>
+
+																							<span class="mystickyelements-social-text " style= "" data-flyout="disable">
+																										<a href="tel:0938432788"  target="_blank" rel="noopener"   data-flyout="disable">
+													Custom Link																											</a>
+																								</span>
+											
+											</li>
+
+																					<li id="mystickyelements-social-custom_channel_5"
+												class="mystickyelements-social-icon-li mystickyelements-social-custom_channel_5  element-desktop-on element-mobile-on">
+																								<span class="mystickyelements-social-icon social-custom_channel_5 social-custom" data-tab-setting = 'click' data-tab-setting = 'click'  data-mobile-behavior="disable" data-click = "0" data-flyout="disable"
+													  >
+																											<a href="https://www.facebook.com/messages/t/116531191540480"   target="_blank" rel="noopener"  data-url="https://www.facebook.com/messages/t/116531191540480" data-tab-setting = 'click' data-mobile-behavior="disable" data-flyout="disable">
+																													<img width="300" height="300" class="" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-lazy-src="https://ttpglobal.com.vn/wp-content/uploads/2023/05/3.png"/><noscript><img width="300" height="300" class="" src="https://ttpglobal.com.vn/wp-content/uploads/2023/05/3.png"/></noscript>
+															<span class='mystickyelements-icon-below-text' style=''>Messenger</span>														</a>
+																									</span>
+
+																							<span class="mystickyelements-social-text " style= "" data-flyout="disable">
+																										<a href="https://www.facebook.com/messages/t/116531191540480"  target="_blank" rel="noopener"   data-flyout="disable">
+													Custom Link																											</a>
+																								</span>
+											
+											</li>
+
+																					<li id="mystickyelements-social-custom_channel_8"
+												class="mystickyelements-social-icon-li mystickyelements-social-custom_channel_8  element-desktop-on element-mobile-on">
+																								<span class="mystickyelements-social-icon social-custom_channel_8 social-custom" data-tab-setting = 'click' data-tab-setting = 'click'  data-mobile-behavior="disable" data-click = "0" data-flyout="disable"
+													  >
+																											<a href="javascript:void(Tawk_API.toggle())"   data-url="javascript:void(Tawk_API.toggle())" data-tab-setting = 'click' data-mobile-behavior="disable" data-flyout="disable">
+																													<img width="300" height="300" class="" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-lazy-src="https://ttpglobal.com.vn/wp-content/uploads/2023/05/2.png"/><noscript><img width="300" height="300" class="" src="https://ttpglobal.com.vn/wp-content/uploads/2023/05/2.png"/></noscript>
+															<span class='mystickyelements-icon-below-text' style=''>Live Chat</span>														</a>
+																									</span>
+
+																							<span class="mystickyelements-social-text " style= "" data-flyout="disable">
+																										<a href="javascript:void(Tawk_API.toggle())"   data-flyout="disable">
+													Custom Link																											</a>
+																								</span>
+											
+											</li>
+
+																		</ul>
+							</div>
+						</div>
+													<style>								
+								form#stickyelements-form input::-moz-placeholder{
+									color: #4F4F4F;
+								} 
+								form#stickyelements-form input::-ms-input-placeholder{
+									color: #4F4F4F								} 
+								form#stickyelements-form input::-webkit-input-placeholder{
+									color: #4F4F4F								}
+								form#stickyelements-form input::placeholder{
+									color: #4F4F4F								}
+								form#stickyelements-form textarea::placeholder {
+									color: #4F4F4F								}
+								form#stickyelements-form textarea::-moz-placeholder {
+									color: #4F4F4F								}
+															</style>
+						<script>window.lazyLoadOptions={elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://ttpglobal.com.vn/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js"></script>
+<style type='text/css'>.product-main .product-info p#pprice {
+    display: block;
+    color: white;
+    text-align: center;
+    width: 140px;
+    margin: auto;
+    margin-bottom: 20px;
+
+    background-color: #ee4d2d;
+    padding: 10px;
+    border-radius: 10px;
+};form.cart {display: none!important; visibility: hidden; position: absolute;z-index:-9999;}</style<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T26K6WS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1740407544 -->
