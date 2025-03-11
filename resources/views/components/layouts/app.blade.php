@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Phân Bón Hưu Cơ Cao Cấp - Công Ty TNHH Phân Bón Quốc Tế Rồng Xanh">
+    <meta name="description" content="Công ty TNHH Phân Bón Quốc Tế Rồng Xanh – đơn vị phân phối chính thức các sản phẩm phân bón hữu cơ cao cấp nhập khẩu từ Mỹ tại Việt Nam và khu vực Đông Nam Á">
     <meta name="keywords" content="Phân Bón Hưu Cơ, Phân Bón Quốc Tế, Phân Bón Rồng Xanh, Phân Bón Hữu Cơ Cao Cấp">
     <meta name="author" content="Công Ty TNHH Phân Bón Quốc Tế Rồng Xanh">
     <meta name="robots" content="index, follow">
