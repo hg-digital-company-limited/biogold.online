@@ -51,7 +51,6 @@
 
                             <div id="text-277590587" class="text">
                                 <p><strong>CÔNG TY TNHH PHÂN BÓN QUỐC TẾ RỒNG XANH</strong> có trụ sở chính tại 104 Mai Thị Lựu, Phường Đa Kao, Quận 1, Thành phố Hồ Chí Minh, Việt Nam. Công ty chuyên cung cấp các sản phẩm phân bón chất lượng cao. Điện thoại liên hệ của công ty là 0868767688. Vốn điều lệ của công ty được xác định là bốn tỷ đồng (4.000.000.000 đồng).</p>
-                                <p>Chủ sở hữu của công ty là ông <strong>VƯƠNG VĂN QUANG</strong>, sinh ngày 01/03/1999. Ông Quang là nam, thuộc dân tộc Kinh và có quốc tịch Việt Nam.</p>
 
                                 <style>
                                     #text-277590587 {
