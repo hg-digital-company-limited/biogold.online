@@ -72,10 +72,10 @@
                     <div class="flex-col hide-for-medium flex-right">
                         <ul class="header-nav header-nav-main nav nav-right  nav-spacing-large nav-uppercase">
                             <li class="html custom html_top_right_text"><img width="280" height="70"
-                                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20280%2070'%3E%3C/svg%3E"
-                                    data-lazy-src="/assets/12123124123.png"><noscript><img
+                                    src="/assets/Frame 69.png"
+                                ><noscript><img
                                         width="280" height="70"
-                                        src="/assets/12123124123.png"></noscript>
+                                        src="/assets/Frame 69.png"></noscript>
                             </li>
                         </ul>
                     </div>

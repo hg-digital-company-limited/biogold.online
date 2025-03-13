@@ -2582,7 +2582,6 @@ background:#FFF;
                                                                 class="metaslider_image_link"><img style="
                                                             max-height: 700px; object-fit: fill;
                                                         " width="1920" height="610"
-                                                                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201920%20610'%3E%3C/svg%3E"
                                                                     class="slider-9062 slide-9434"
                                                                     alt="1920X610 Phân Bón Hữu Cơ Cao Cấp, Nhập Khẩu Từ Mỹ | TTP Global"
                                                                     decoding="async" rel=""
@@ -2590,16 +2589,15 @@ background:#FFF;
                                                                     fetchpriority="high"
                                                                     data-lazy-sizes="(max-width: 1920px) 100vw, 1920px"
                                                                     width="1920" height="610"
-                                                                    src="/assets/wp-content/uploads/2025/03/1920X610.jpg"
+                                                                    src="/assets/image 67.png"
                                                                     class="slider-9062 slide-9434"
                                                                     alt="1920X610 Phân Bón Hữu Cơ Cao Cấp, Nhập Khẩu Từ Mỹ | TTP Global"
                                                                     decoding="async" rel=""
                                                                     title="chuong-trinh-cham-soc-lua-dau-mua"
                                                                     fetchpriority="high"
-                                                                    srcset="  /assets/z6392182784286_d34206c2d3a0d56b396160be9ea0b279.jpg"
                                                                     sizes="(max-width: 1920px) 100vw, 1920px"></noscript></a>
                                                         </li>
-                                                        <li style="display: none; width: 100%;"
+                                                        {{-- <li style="display: none; width: 100%;"
                                                             class="slide-9064 ms-image " aria-roledescription="slide"
                                                             aria-label="slide-9064"><a
                                                                 href="/products"
@@ -2618,7 +2616,7 @@ background:#FFF;
                                                                     title="chuong trinh huu co cho nong san viet"
                                                                     src="/assets/z6392182599909_9f94b4d8cacd64204e7b18995d193cfd.jpg"
                                                                     sizes="(max-width: 1920px) 100vw, 1920px"></noscript></a>
-                                                        </li>
+                                                        </li> --}}
                                                     </ul>
                                                 </div>
 
@@ -2778,21 +2776,17 @@ background:#FFF;
 
                                         <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_598821701">
                                             <div class="img-inner dark">
-                                                <img width="626" height="406"
-                                                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20626%20406'%3E%3C/svg%3E"
+                                                <img width="400" height="406"
+                                               style="width: 400px;margin-top: -90px;margin-left: 93px;"
                                                     class="attachment-large size-large"
                                                     alt="la cay Phân Bón Hữu Cơ Cao Cấp, Nhập Khẩu Từ Mỹ | TTP Global"
                                                     decoding="async"
-                                                    data-lazy-srcset="/assets/wp-content/uploads/2022/10/la-cay-600x389.png 626w, /assets/wp-content/uploads/2022/10/la-cay-300x195.png 300w, /assets/wp-content/uploads/2022/10/la-cay-600x389.png 600w"
-                                                    data-lazy-sizes="(max-width: 626px) 100vw, 626px"
                                                     title="phân bón hữu cơ cao cấp, nhập khẩu từ mỹ | ttp global count(title)"
-                                                    data-lazy-src="/assets/wp-content/uploads/2022/10/la-cay-600x389.png"><noscript><img
-                                                        width="626" height="406"
-                                                        src="/assets/wp-content/uploads/2022/10/la-cay-600x389.png"
+                                                    src="/assets/pngegg.png"
+                                                        width="400" height="406"
                                                         class="attachment-large size-large"
                                                         alt="la cay Phân Bón Hữu Cơ Cao Cấp, Nhập Khẩu Từ Mỹ | TTP Global"
                                                         decoding="async"
-                                                        srcset="/assets/wp-content/uploads/2022/10/la-cay-600x389.png 626w, /assets/wp-content/uploads/2022/10/la-cay-300x195.png 300w, /assets/wp-content/uploads/2022/10/la-cay-600x389.png 600w"
                                                         sizes="(max-width: 626px) 100vw, 626px"
                                                         title="phân bón hữu cơ cao cấp, nhập khẩu từ mỹ | ttp global count(title)"></noscript>
                                             </div>
@@ -2828,7 +2822,7 @@ background:#FFF;
                             }
 
                             #section_20344233 .section-bg.bg-loaded {
-                                background-image: url(/assets/wp-content/uploads/2024/03/anh-banner-cay-lua-2.jpg);
+                                background-image: url(/assets/trong-sau-rieng.jpg);
                             }
 
                             #section_20344233 .ux-shape-divider--top svg {
