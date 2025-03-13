@@ -2889,8 +2889,8 @@ background:#FFF;
 
 
                                             <h2 style="margin-bottom: 0px; font-size:180%
-"><span style="color:#075f33"><strong>PB</strong></span><strong>
-                                                    Rồng Xanh</strong></h2>
+"><span style="color:#075f33"><strong></strong></span><strong>
+                                                    BIO GOLD</strong></h2>
 
                                             <style>
                                                 #text-1314885602 {
